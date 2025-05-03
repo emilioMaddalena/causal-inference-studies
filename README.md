@@ -1,4 +1,4 @@
-# causal-learning-studies
+# causal-inference-studies
 
 Explaining the main concepts around causal learning via theory and code! :closed_book: :computer:
 
