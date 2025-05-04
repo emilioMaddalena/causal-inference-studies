@@ -16,15 +16,16 @@ Topics to cover: causal discovery (what it is, why it is hard), assumptions in c
 
 **Books**
 
-*Causality - Models, Reasoning and Inference*. J. Pearl.
-*Causal Inference - What If*. M. A. Hernán, J. M. Robins.
-*Elements of Causal Inference - Foundations and Learning Algorithms*. J. Peters, D. Janzing, B. Schölkopf.
+- *Causality - Models, Reasoning and Inference*. J. Pearl.
+- *Causal Inference - What If*. M. A. Hernán, J. M. Robins.
+- *Elements of Causal Inference - Foundations and Learning Algorithms*. J. Peters, D. Janzing, B. Schölkopf.
 
 **Articles**
 
-*Causal inference in statistics: An overview*. (2009) J. Pearl
-Causality for Machine Learning. B. Schölkopf. [[paper](https://arxiv.org/pdf/1911.10500)]
+- *Causal inference in statistics: An overview*. (2009) J. Pearl
+- Causality for Machine Learning. B. Schölkopf. [[paper](https://arxiv.org/pdf/1911.10500)]
 
 **Videos**
 
-MIT Lectures on Causal Inference for Healthcare. [[video 1](https://www.youtube.com/watch?v=gRkUhg9Wb-I)]
+- Statistical rethinking lectures. R. McElreath. [[playlist](https://youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus&si=l81BjmEHm1JbrstP)]
+- MIT Lectures on Causal Inference for Healthcare. [[video 1](https://www.youtube.com/watch?v=gRkUhg9Wb-I)]
