@@ -1,12 +1,16 @@
 # causal-inference-studies
 
-Explaining the main concepts around causal learning via theory and code! :closed_book: :computer:
+Explaining the main concepts around causal learning via bitesize theory and code! :closed_book: :computer:
 
 | Number | Topic | Lesson | Code | Math | Complexity |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| 01 | Foundations  | Why causality matters | - | - | :cake:
-| 02 | Foundations | Association vs causation |  :white_check_mark: | :white_check_mark: | :cake:
-| 03 | Foundations | Common misconceptions |  - | :white_check_mark: | :cake:
+| 01 | Intro  | Why causality matters | - | - | :cake:
+| 02 | Intro | Association vs causation |  :white_check_mark: | :white_check_mark: | :cake:
+| 03 | Foundations | DAGs |  - | :white_check_mark: | :cake:
+| 04 | Foundations | Causal discovery |  - | :white_check_mark: | :cake:
+
+
+Topics to cover: causal discovery (what it is, why it is hard), assumptions in causal discovery...
 
 ### Resources
 
@@ -18,6 +22,7 @@ Explaining the main concepts around causal learning via theory and code! :closed
 
 **Articles**
 
+*Causal inference in statistics: An overview*. (2009) J. Pearl
 Causality for Machine Learning. B. Schölkopf. [[paper](https://arxiv.org/pdf/1911.10500)]
 
 **Videos**
