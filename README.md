@@ -29,3 +29,7 @@ Topics to cover: causal discovery (what it is, why it is hard), assumptions in c
 
 - Statistical rethinking lectures. R. McElreath. [[playlist](https://youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus&si=l81BjmEHm1JbrstP)]
 - MIT Lectures on Causal Inference for Healthcare. [[video 1](https://www.youtube.com/watch?v=gRkUhg9Wb-I)]
+
+**Software packages**
+
+Some Python packages to help you do causal inference are listed and discussed [here](markdowns/software_packages.md).
