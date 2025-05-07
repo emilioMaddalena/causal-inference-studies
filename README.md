@@ -12,7 +12,7 @@ Explaining the main concepts around causal learning via bitesize theory and code
 | 06 | Misc. | Simpson's paradox |  - | :white_check_mark: | :mortar_board:
 
 
-Legend: simple (:cake:), complex (:books:), advanced (:mortar_board:).
+Legend: :cake: simple, :books: complex, :mortar_board: advanced.
 
 ### Resources
 
