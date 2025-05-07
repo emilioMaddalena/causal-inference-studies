@@ -12,3 +12,13 @@
 - **Attempt refutation**: Verify the robustness of your conclusions by performing sanity checks on it. 
 
 ---
+
+### causal-learn
+
+[causal-learn](https://github.com/py-why/causal-learn) can be used to learn DAGs from data (and assumptions). It implements various related learning methods (constraint-based, score-based, permutation-based, etc), and provides utilities to carry out independence tests and evaluate learned graphs.
+
+---
+
+### networkx 
+
+[networkx](https://github.com/networkx/networkx) is the go-to python package for graph creation and manipulation. Also, it is not limited to DAGs. With networkx, you can analyze graphs by computing centrality measures, and carrying out structural and connectivity analyses for example.
