@@ -4,7 +4,7 @@
 
 ### DoWhy
 
-[DoWhy](https://github.com/py-why/dowhy) is a python package developed by Microsoft. With it, you can:
+[DoWhy](https://github.com/py-why/dowhy) is developed by Microsoft. With it, you can:
 
 - **Define causal graphs**: create DAGs, stating your assumptions. DoWhy does not perform any causal discovery, i.e., no graph learning from data.
 - **Perform identification**: given a DAG and a list of observed variables (but no data), answer the question "can I, and if yes how, compute a causal effect?".
