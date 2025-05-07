@@ -8,9 +8,11 @@ Explaining the main concepts around causal learning via bitesize theory and code
 | 02 | Intro | Association vs causation |  :white_check_mark: | :white_check_mark: | :cake:
 | 03 | Foundations | DAGs |  - | :white_check_mark: | :cake:
 | 04 | Foundations | Causal discovery |  - | :white_check_mark: | :cake:
+| 05 | Foundations | Causal discovery assumptions |  - | :white_check_mark: | :mortar_board:
+| 06 | Misc. | Simpson's paradox |  - | :white_check_mark: | :mortar_board:
 
 
-Topics to cover: causal discovery (what it is, why it is hard), assumptions in causal discovery...
+Legend: simple (:cake:), complex (:books:), advanced (:mortar_board:).
 
 ### Resources
 
