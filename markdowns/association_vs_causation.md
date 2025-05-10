@@ -19,6 +19,8 @@ Although it's amusing to think chocolate will help you get that smarter, it's al
 4. In wealthy countries people tend to eat more chocolate. Also, they tend to have better education, leading to more nobel prizes.
 5. Something else entirely...
 
+Even though, mathematically, we can show $X1$ and $X2$ are strongly associated, increasing/activating/enabling/making use of $X1$ won't guarantee the effect $X2$. 
+
 ---
 
 > TL;DR
