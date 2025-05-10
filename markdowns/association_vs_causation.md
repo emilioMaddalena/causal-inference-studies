@@ -31,13 +31,11 @@ Even though, mathematically, we can show $X1$ and $X2$ are strongly associated, 
 
 Look at the examples below and at how correlated variables $X$ and $Y$ are.
 
-![alt text](image.png)
+![alt text](imgs/avc1.png)
 
-![alt text](image-1.png)
+![alt text](imgs/avc2.png)
 
-![alt text](image-2.png)
-
-![alt text](image-3.png)
+![alt text](imgs/avc3.png)
 
 Pearson's correlation (a.k.a. correlation) can capture linear relationships in the upward and downward directions, but fail to capture other functional links (e.g. the quadratic form).
 
