@@ -10,10 +10,11 @@ Explaining the main concepts around causal learning via bitesize theory and code
 | - | Foundations | Confounders |  - | :white_check_mark: | :books:
 | 04 | Foundations | Causal discovery |  - | :white_check_mark: | :cake:
 | 05 | Foundations | Causal discovery assumptions |  - | :white_check_mark: | :mortar_board:
-| 06 | Misc. | Simpson's paradox |  - | :white_check_mark: | :mortar_board:
+| 06 | Misc. | Simpson's paradox |  - | - | :mortar_board:
+| - | Misc. | Causality and time |  - | - | :mortar_board::mortar_board:
 
 
-Legend: :cake: simple, :books: complex, :mortar_board: advanced.
+Legend: :cake: simple, :books: complex, :mortar_board: advanced, :mortar_board::mortar_board: philosophy.
 
 ### Resources
 
@@ -32,6 +33,8 @@ Legend: :cake: simple, :books: complex, :mortar_board: advanced.
 
 - Statistical rethinking lectures. R. McElreath. [[playlist](https://youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus&si=l81BjmEHm1JbrstP)]
 - MIT Lectures on Causal Inference for Healthcare. [[video 1](https://www.youtube.com/watch?v=gRkUhg9Wb-I)]
+- Lectures on Causality series, J. Peters. [[video 1](https://www.youtube.com/watch?v=zvrcyqcN9Wo)]
+- Towards Causal Machine Learning, B. Schölkopf. [[lecture](https://www.youtube.com/watch?v=ooeRlw3U2zU)]
 
 **Software packages**
 
