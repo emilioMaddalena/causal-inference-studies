@@ -4,13 +4,14 @@ Explaining the main concepts around causal learning via bitesize theory and code
 
 | Number | Topic | Lesson | Code | Math | Complexity |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| 01 | Intro  | Why causality matters | - | - | :cake:
-| 02 | Intro | Association vs causation |  :white_check_mark: | :white_check_mark: | :cake:
-| 03 | Foundations | DAGs |  - | :white_check_mark: | :cake:
+| - | Intro  | Why causality matters | - | - | :cake:
+| - | Intro | Association vs causation |  :white_check_mark: | :white_check_mark: | :cake:
+| - | Foundations | DAGs |  - | :white_check_mark: | :cake:
+| - | Foundations | DAGs cont'd |  - | :white_check_mark: | :cake:
 | - | Foundations | Confounders |  - | :white_check_mark: | :books:
-| 04 | Foundations | Causal discovery |  - | :white_check_mark: | :cake:
-| 05 | Foundations | Causal discovery assumptions |  - | :white_check_mark: | :mortar_board:
-| 06 | Misc. | Simpson's paradox |  - | - | :mortar_board:
+| - | Foundations | Causal discovery |  - | :white_check_mark: | :cake:
+| - | Foundations | Causal discovery assumptions |  - | :white_check_mark: | :mortar_board:
+| - | Misc. | Simpson's paradox |  - | - | :mortar_board:
 | - | Misc. | Causality and time |  - | - | :mortar_board::mortar_board:
 
 
