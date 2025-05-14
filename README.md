@@ -6,7 +6,7 @@ Explaining the main concepts around causal learning via bitesize theory and code
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | - | Intro  | Why causality matters | - | - | :cake:
 | - | Intro | [Association vs causation](markdowns/association_vs_causation.md) |  :white_check_mark: | :white_check_mark: | :cake:
-| - | Foundations | [DAGs]((markdowns/dags.md)) |  - | :white_check_mark: | :cake:
+| - | Foundations | [DAGs](markdowns/dags.md) |  - | :white_check_mark: | :cake:
 | - | Foundations | DAGs cont'd |  - | :white_check_mark: | :cake:
 | - | Foundations | [Confounders](markdowns/confounders.md) |  - | :white_check_mark: | :books:
 | - | Foundations | Causal discovery |  - | :white_check_mark: | :cake:
