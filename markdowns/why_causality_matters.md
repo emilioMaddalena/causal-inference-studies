@@ -25,4 +25,30 @@ Causal analysis helps us answer questions such as:
 
 - 📈 Does personalized advertising lead to higher conversion rates?
 
+---
 
+> TL;DR
+> 
+> Because, once established, causal relationships generalizes well.
+
+---
+
+Regulatory bodies require pharmaceutical companies to present causal proofs (via clinical trials) that new drugs indeed have the intended effect on patients.
+
+Because they control for confounders and rely on plenty of structure and tests, causal models are considered more robust than general statistical or ML models. 
+
+---
+
+> TL;DR
+> 
+> Because fitting data with every possible covariate can be a bad idea sometimes.
+
+---
+
+Say you want to study how a variable $X$ affects a quantity of interest $Y$, and you've also collected a number of other signals $Z_i$.
+
+If you feed each and every variable to an ML model (think a large neural net), optimizing its weights, and calling it a day you might:
+
+- Find a connection between $X$ and $Y$, when there is none.
+- Think $X$ really impacts $Y$, when actually it is $Y$ that causes $X$.
+- More in general, arrive at a wrong measure of how much $X$ influences $Y$. 
