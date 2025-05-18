@@ -4,7 +4,7 @@ Explaining the main concepts around causal learning via bitesize theory and code
 
 | Number | Topic | Lesson | Code | Math | Complexity |
 | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| - | Intro  | Why causality matters | - | - | :cake:
+| - | Intro  | [Why causality matters](markdowns/why_causality_matters.md) | - | - | :cake:
 | - | Intro | [Association vs causation](markdowns/association_vs_causation.md) |  :white_check_mark: | :white_check_mark: | :cake:
 | - | Foundations | [DAGs](markdowns/dags.md) |  - | :white_check_mark: | :cake:
 | - | Foundations | DAGs cont'd |  - | :white_check_mark: | :cake:
