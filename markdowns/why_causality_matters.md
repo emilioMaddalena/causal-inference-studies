@@ -50,8 +50,10 @@ This is so especially because causal models differentiate between variables that
 
 Say you want to study how a variable $X$ affects a quantity of interest $Y$, and you've also collected a number of other signals $Z_i$.
 
-If you feed each and every variable to an ML model (think a large neural net), optimizing its weights, and calling it a day you might:
+If you feed each and every variable to an ML model (think a large neural network), optimizing its weights, and calling it a day you might:
 
 - Find a connection between $X$ and $Y$, when there is none.
 - Think $X$ really impacts $Y$, when actually it is $Y$ that causes $X$.
 - More in general, arrive at a wrong measure of how much $X$ influences $Y$. 
+  
+Causal analysis also helps us understand which $Z_i$ variables **should not be included** in the model if we really want to understand how $X$ impacts $Y$.
