@@ -33,9 +33,12 @@ Causal analysis helps us answer questions such as:
 
 ---
 
-Regulatory bodies require pharmaceutical companies to present causal proofs (via clinical trials) that new drugs indeed have the intended effect on patients.
+Because they control for confounders and rely on plenty of structure and tests, causal models are considered **more robust than general statistical or ML models**. 
 
-Because they control for confounders and rely on plenty of structure and tests, causal models are considered more robust than general statistical or ML models. 
+For example, regulatory bodies require pharmaceutical companies to present causal proofs (via clinical trials) that new drugs indeed have the intended effect on patients.
+
+This is so especially because causal models differentiate between variables that are targets/outputs/effects, versus the ones that are inputs/treatments, and the ones that are confounders. 
+
 
 ---
 
