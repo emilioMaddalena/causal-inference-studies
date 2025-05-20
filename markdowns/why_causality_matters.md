@@ -25,6 +25,8 @@ Causal analysis helps us answer questions such as:
 
 - 📈 Does personalized advertising lead to higher conversion rates?
 
+Not every questions is a valid causal question though. Check [this page](causal_questions.md) if you want to understand the subtleties aroud it.
+
 ---
 
 > TL;DR
