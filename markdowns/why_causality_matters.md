@@ -59,3 +59,5 @@ If you feed each and every variable to an ML model (think a large neural network
 - More in general, arrive at a wrong measure of how much $X$ influences $Y$. 
   
 Causal analysis also helps us understand which $Z_i$ variables **should not be included** in the model if we really want to understand how $X$ impacts $Y$.
+
+Different notions of impact are discussed [on this page](causal_effects.md).
