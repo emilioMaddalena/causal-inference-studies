@@ -1,0 +1,34 @@
+site_name: Causal Inference Studies
+site_url: https://YOUR_GITHUB_USERNAME.github.io/causal-inference-studies
+repo_url: https://github.com/YOUR_GITHUB_USERNAME/causal-inference-studies
+repo_name: GitHub
+docs_dir: markdowns
+nav:
+  - Home: index.md
+  - Lessons:
+      - Why causality matters: why_causality_matters.md
+      - Association vs causation: association_vs_causation.md
+      - DAGs: dags.md
+      - DAGs cont'd: dags_contd.md
+      - Causal effects: causal_effects.md
+      - Confounders: confounders.md
+      - Confounders cont'd: confounders_contd.md
+      - Identification: identification.md
+      - A/B testing: ab_testing.md
+      - Causal questions: causal_questions.md
+      - Software packages: software_packages.md
+extra_css:
+  - style.css
+theme:
+  name: flatly
+  palette:
+    primary: blue
+    accent: light blue
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  
