@@ -7,5 +7,11 @@ requires-python = ">=3.12"
 dependencies = [
     "ipykernel>=6.29.5",
     "matplotlib>=3.10.3",
+    "mkdocs-material>=9.6.14",
+    "mkdocs>=1.6.1",
     "networkx>=3.4.2",
+    "mkdocs-windmill>=1.0.5",
+    "mkdocs-torillic>=2.4.2",
+    "mkdocs-bootswatch>=1.1",
+    "pymdown-extensions>=10.15",
 ]
