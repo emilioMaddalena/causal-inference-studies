@@ -27,10 +27,12 @@ Legend: :cake: simple, :books: complex, :mortar_board: advanced, :mortar_board::
 - *Causal Inference - What If*. M. A. Hernán, J. M. Robins.
 - *Elements of Causal Inference - Foundations and Learning Algorithms*. J. Peters, D. Janzing, B. Schölkopf.
 
-**Articles**
+**Misc.**
 
-- *Causal inference in statistics: An overview*. (2009) J. Pearl
+- Causal inference in statistics: An overview. (2009) J. Pearl
 - Causality for Machine Learning. B. Schölkopf. [[paper](https://arxiv.org/pdf/1911.10500)]
+- Statistical Rethinking, R. McElreath. [[]()]
+- Causal Inference: An overview. A. Deng. [[repo](https://alexdeng.github.io/causal/)]
 
 **Videos**
 
