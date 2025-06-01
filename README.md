@@ -33,6 +33,7 @@ Legend: :cake: simple, :books: complex, :mortar_board: advanced, :mortar_board::
 - Causality for Machine Learning. B. Schölkopf. [[paper](https://arxiv.org/pdf/1911.10500)]
 - Statistical Rethinking, R. McElreath. [[]()]
 - Causal Inference: An overview. A. Deng. [[repo](https://alexdeng.github.io/causal/)]
+- Causal Inference course material (MIT). C. Squires. [[repo](https://github.com/csquires/6.S091-causality)]
 
 **Videos**
 
