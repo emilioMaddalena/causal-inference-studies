@@ -19,6 +19,12 @@
 
 ---
 
+### causalml 
+
+[causalml](https://github.com/uber/causalml) is a python package for effect estimation with a focus on ML, especially tree-based methods. As opposed to `DoWhy`, it is less formal with assumptions and does not offer extensive identification and refutation tools. It is aimed at data scientists and tech firms, instead of economists.
+
+---
+
 ### networkx 
 
 [networkx](https://github.com/networkx/networkx) is the go-to python package for graph creation and manipulation. Also, it is not limited to DAGs. With networkx, you can analyze graphs by computing centrality measures, and carrying out structural and connectivity analyses for example.
