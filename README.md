@@ -29,9 +29,10 @@ Legend: :cake: simple, :books: complex, :mortar_board: advanced, :mortar_board::
 
 **Misc.**
 
-- Causal inference in statistics: An overview. (2009) J. Pearl
-- Causality for Machine Learning. B. Schölkopf. [[paper](https://arxiv.org/pdf/1911.10500)]
-- Statistical Rethinking, R. McElreath. [[]()]
+- *Causal inference in statistics: An overview.* (2009) J. Pearl
+- *Introduction to Causal Inference from a Machine Learning Perspective*. B. Neal. [[Lecture Notes](https://www.bradyneal.com/Introduction_to_Causal_Inference-Dec17_2020-Neal.pdf)] 
+- *Causality for Machine Learning*. B. Schölkopf. [[paper](https://arxiv.org/pdf/1911.10500)]
+- *Statistical Rethinking*, R. McElreath. [[]()]
 - Causal Inference: An overview. A. Deng. [[repo](https://alexdeng.github.io/causal/)]
 - Causal Inference course material (MIT). C. Squires. [[repo](https://github.com/csquires/6.S091-causality)]
 
