@@ -2,7 +2,7 @@ site_name: Causal Inference Studies
 site_url: https://YOUR_GITHUB_USERNAME.github.io/causal-inference-studies
 repo_url: https://github.com/YOUR_GITHUB_USERNAME/causal-inference-studies
 repo_name: GitHub
-docs_dir: markdowns
+docs_dir: material
 nav:
   - Home: index.md
   - Lessons:
@@ -16,19 +16,27 @@ nav:
       - Identification: identification.md
       - A/B testing: ab_testing.md
       - Causal questions: causal_questions.md
-      - Software packages: software_packages.md
-extra_css:
-  - style.css
+  - Software: software_packages.md
+  - Resources: resources.md
 theme:
-  name: flatly
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - toc.integrate
   palette:
-    primary: blue
-    accent: light blue
+    - scheme: default
+      primary: blue
+      accent: light blue
+    - scheme: slate
+      primary: blue
+      accent: light blue
 markdown_extensions:
   - admonition
   - codehilite
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.emoji
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  
