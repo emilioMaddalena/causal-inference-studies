@@ -1,6 +1,6 @@
 site_name: Causal Inference Studies
-site_url: https://YOUR_GITHUB_USERNAME.github.io/causal-inference-studies
-repo_url: https://github.com/YOUR_GITHUB_USERNAME/causal-inference-studies
+site_url: https://emiliomaddalena.github.io/causal-inference-studies/
+repo_url: https://github.com/emilioMaddalena/causal-inference-studies
 repo_name: GitHub
 docs_dir: material
 nav:
