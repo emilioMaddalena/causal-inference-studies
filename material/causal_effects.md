@@ -24,7 +24,19 @@ The so-called fundamental problem of causal inference is that **never will we be
 ---
 
 To be covered:
+- Individual Treatment Effect (ITE)
 - Total Effect (TE)
 - Natural Direct Effect (NDE)
 - Natural Indirect Effect (NIE)
 - Controlled Direct Effect (CDE)
+
+---
+
+| Acronym | Effect Name | Definition | Interpretation |
+|:--------|:-----------:|:----------:|:--------------:|
+| ATE | Average Treatment Effect | $E[Y(1)−Y(0)]E[Y(1)−Y(0)]$ | Effect on a random individual in the population |
+| ITE | Individual Treatment Effect | $Y_i​(1)−Yi_​(0)$ | Effect on a random individual in the population |
+| CATE | Conditional Average Treatment Effect |	$Y_i​(1)−Yi_​(0)$ | Effect on a random individual in the population |
+
+
+

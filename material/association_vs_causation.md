@@ -25,6 +25,14 @@ Even though, mathematically, we can show $X1$ and $X2$ are strongly associated, 
 
 > TL;DR
 > 
+> Causation is 
+
+---
+
+---
+
+> TL;DR
+> 
 > Correlation is a very narrow measure of association.
 
 ---

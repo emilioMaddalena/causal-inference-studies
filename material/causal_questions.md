@@ -17,3 +17,10 @@ Consider these:
 
 Question 1. and question 4. are not valid causal questions. In 1. 
 
+---
+
+> TL;DR
+> 
+> For a causal question to be valid, we need: consistency, 
+
+---

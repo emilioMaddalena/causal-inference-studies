@@ -1,9 +1,9 @@
 body {
-    font-size: 20px;
+    font-size: 25px;
 }
 
-.md-sidebar {
-    background: #000000;
+html body {
+    font-size: 25px !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
