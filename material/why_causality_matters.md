@@ -1,11 +1,8 @@
 # **Why causality matters**
----
 
-> TL;DR
-> 
-> Because it is useful in many areas: economics, medicine, marketing, just to name a few.
-
----
+<div class="highlight-section">
+Because it is useful in many areas: economics, medicine, marketing, just to name a few.
+</div>
 
 Causal analysis helps us answer questions such as:
 
@@ -28,12 +25,9 @@ Causal analysis helps us answer questions such as:
 Not every questions is a valid causal question though. Check [this page](causal_questions.md) if you want to understand the subtleties aroud it.
 
 ---
-
-> TL;DR
-> 
-> Because, once established, causal relationships generalizes well.
-
----
+<div class="highlight-section">
+Because, once established, causal relationships generalizes well.
+</div>
 
 Because they control for confounders and rely on plenty of structure and tests, causal models are considered **more robust than general statistical or ML models**. 
 
@@ -41,14 +35,10 @@ For example, regulatory bodies require pharmaceutical companies to present causa
 
 This is so especially because causal models differentiate between variables that are targets/outputs/effects, versus the ones that are inputs/treatments, and the ones that are confounders. 
 
-
 ---
-
-> TL;DR
-> 
-> Because fitting data with every possible covariate can be a bad idea sometimes.
-
----
+<div class="highlight-section">
+Because fitting data with every possible covariate can be a bad idea sometimes.
+</div>
 
 Say you want to study how a variable $X$ affects a quantity of interest $Y$, and you've also collected a number of other signals $Z_i$.
 

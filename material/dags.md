@@ -1,10 +1,9 @@
 # **DAGs**
----
 
-> TL;DR
-> 
-> DAGs are visual ways of expressing connections between variables.
 ---
+<div class="highlight-section">
+DAGs are visual ways of expressing connections between variables.
+</div>
 
 Directed acyclic graphs (DAGs) are an easy way of expressing your beliefs about a set of variables. 
 
@@ -20,10 +19,9 @@ Given a node (say *weigth*), a **child** is a node that is directly mapped by it
 
 ---
 
-> TL;DR
-> 
-> DAGs do not encode plain statistical independence, but conditional independence.
----
+<div class="highlight-section">
+DAGs do not encode plain statistical independence, but conditional independence.
+</div>
 
 Take the following DAG:
 
@@ -36,11 +34,9 @@ Mathematically, $X1 \perp X4 \; | \; (X3, X2)$.
 Thinking back at the blood pressure example, the graph says blood pressure is indeed dependent on the diet even if diet is not its parent. However, if one fixes a given weight and exercise level, then the diet would have *no influence* on an individual's blood pressure!
 
 ---
-
-> TL;DR
-> 
-> Data alone (without any expert knowledge) is insufficient to arrive at a single DAG.
----
+<div class="highlight-section">
+Data alone (without any expert knowledge) is insufficient to arrive at a single DAG.
+</div>
 
 Say you're given the data below, which clearly show $X1$ and $X2$ are strongly associated. Which DAG would represent it best?
 
@@ -54,14 +50,10 @@ What if a nutritionist comes and says a third variable is missing, $Z$, which re
 
 If even in the 2-variable case we require more assumptions to draw a sensible DAG, imagine how difficult the task would be with 20 interconnected variables. The process of finding DAGs from data and additional assumptions is called causal discovery.
 
-
 ---
-
-> TL;DR
-> 
-> A DAG highlights links, but an SCM tells you *exactly* how variables are linked, functionally.
-
----
+<div class="highlight-section">
+A DAG highlights links, but an SCM tells you *exactly* how variables are linked, functionally.
+</div>
 
 DAGs tell you that two variables are linked, but won't tell you exactly how. A **structural causal model** (SCM), on the other hand, does exactly that.
 
@@ -77,10 +69,7 @@ X_4 &= f_4(X_2, X_3, N_4) \nonumber
 where $N_1,...,N_4$ are exogenous variables, also called noise variables. Noise variables are assumed to be jointly independent.
 
 ---
-
-> TL;DR
-> 
-> Association can flow against arrrows, causality cannot.
-
----
+<div class="highlight-section">
+Association can flow against arrrows, causality cannot.
+</div>
 

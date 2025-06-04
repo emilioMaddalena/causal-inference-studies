@@ -1,11 +1,9 @@
 # **Association vs causation**
----
 
-> TL;DR
-> 
-> Statistical association (including correlation) does not imply causation. That's because correlation can be induced by other phenomena apart from causation.
-
----
+<div class="highlight-section">
+Statistical association (including correlation) does not imply causation. <br>
+That's because correlation can be induced by other phenomena apart from causation.
+</div>
 
 Say $X1$ is the annual chocolate consumption (in kg/capita) of a country. $X2$ is the number of Nobel Prize Laureates (per 10^7 inhabitants). If you compute the correlation between $X1$ and $X2$ you could arrive at numbers as high as $R=0.69$ and p-values as low as $p=0.0004$.
 
@@ -22,20 +20,9 @@ Although it's amusing to think chocolate will help you get that smarter, it's al
 Even though, mathematically, we can show $X1$ and $X2$ are strongly associated, increasing/activating/enabling/making use of $X1$ won't guarantee the effect $X2$. 
 
 ---
-
-> TL;DR
-> 
-> Causation is 
-
----
-
----
-
-> TL;DR
-> 
-> Correlation is a very narrow measure of association.
-
----
+<div class="highlight-section">
+Correlation is a very narrow measure of association.
+</div>
 
 Look at the examples below and at how correlated variables $X$ and $Y$ are.
 
