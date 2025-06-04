@@ -10,3 +10,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #003366;
     font-weight: bold;
 }
+
+.highlight-section {
+    background-color: #FAEDCB;
+    color: #003366;
+    padding: 1em;
+    font-weight: normal;
+}
