@@ -1,20 +1,21 @@
 # causal-inference-studies
 
-Explaining the main concepts around causal learning via bitesize theory and code! :closed_book: :computer:
+Bitesize causal inference lessons for data scientists and ML engineers! :dart:
 
-| Number | Topic | Lesson | Code | Math | Complexity |
-| :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| - | Intro  | [Why causality matters](markdowns/why_causality_matters.md) | - | - | :cake:
-| - | Intro | [Association vs causation](markdowns/association_vs_causation.md) |  :white_check_mark: | :white_check_mark: | :cake:
-| - | Foundations | [DAGs](markdowns/dags.md) |  - | :white_check_mark: | :cake:
-| - | Foundations | DAGs cont'd |  - | :white_check_mark: | :cake:
-| - | Foundations | [Causal effects](markdowns/causal_effects.md) |  - | :white_check_mark: | :books:
-| - | Foundations | [Confounders](markdowns/confounders.md) |  - | :white_check_mark: | :books:
-| - | Foundations | Causal discovery |  - | :white_check_mark: | :cake:
-| - | Foundations | Causal discovery assumptions |  - | :white_check_mark: | :mortar_board:
-| - | Misc. | Simpson's paradox |  - | - | :mortar_board:
-| - | Misc. | A/B testing |  - | - | :mortar_board:
-| - | Misc. | Causality and time |  - | - | :mortar_board::mortar_board:
+Here's the site: [causal-inference-studies](https://emiliomaddalena.github.io/causal-inference-studies/)
 
+---
 
-Legend: :cake: simple, :books: complex, :mortar_board: advanced, :mortar_board::mortar_board: philosophy.
+**Motivation:**
+
+Causal inference can make your ML models generalize better, especially when you want to take robust actions based on them.
+
+It's also a valuable tool to draw conclusions from observational data (when you can't run A/B tests).
+
+---
+
+**Contributing:** 
+
+- Edit/create new markdowns in `material`, modify the site structure in `mkdocs.yml` if needed.
+- Numerical examples are needed (I'm thinking jupyter notebooks).
+- Create a PR! :smiley:
