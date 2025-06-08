@@ -18,4 +18,6 @@ It's also a valuable tool to draw conclusions from observational data (when you 
 
 - Edit/create new markdowns in `material`, modify the site structure in `mkdocs.yml` if needed.
 - Numerical examples are needed (I'm thinking jupyter notebooks).
-- Create a PR! :smiley:
+- Create a PR! 
+
+We use `mkdocs` to compile the site. To test it locally, install it, then run `mkdocs build` and `mkdocs serve`.
