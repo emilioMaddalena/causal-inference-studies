@@ -16,6 +16,7 @@ nav:
       - Identification: identification.md
       - A/B testing: ab_testing.md
       - Causal questions: causal_questions.md
+      - Propensity scores: propensity_scores.md
   - Software: software_packages.md
   - Resources: resources.md
 theme:
