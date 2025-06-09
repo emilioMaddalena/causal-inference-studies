@@ -1,11 +1,11 @@
 # **Propensity scores**
 
 <div class="highlight-section">
-Propensity scores are probabilities. The probability of a certain type of unit (e.g. asian descendants) receiving the treatment.
+Propensity scores are likelihoods. The likelihood of a certain type of unit (e.g. asian descendants) receiving the treatment.
 </div>
 
 
-Experiments are usually design balancing groups of treated $T=1$ vs non-treated people $T=0$. And making sure that, if our population has some important features $X$, those will be **equally represented in both groups**.
+Experiments are usually design balancing groups of treated $T=1$ vs control people $T=0$. And making sure that, if our population has some important features $X$, those will be **equally represented in both groups**.
 
 
 Imagine testing the effectiveness of a new dietary supplement. Given some characteristic $X = \text{vegan}$, you'd want to see roughly the same number of these individuals in the treated and untreated groups. 
