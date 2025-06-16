@@ -11,7 +11,7 @@ Explaining the main concepts around causal learning via bitesize theory and code
 | - | Foundations | [Causal effects](causal_effects.md) |  - | :white_check_mark: | :books:
 | - | Foundations | [Confounders](confounders.md) |  - | :white_check_mark: | :books:
 | - | Foundations | Causal discovery |  - | :white_check_mark: | :cake:
-| - | Foundations | Causal discovery assumptions |  - | :white_check_mark: | :mortar_board:
+| - | Foundations | Causal assumptions |  - | :white_check_mark: | :mortar_board:
 | - | Misc. | Simpson's paradox |  - | - | :mortar_board:
 | - | Misc. | A/B testing |  - | - | :mortar_board:
 | - | Misc. | Causality and time |  - | - | :mortar_board::mortar_board:
