@@ -1,11 +1,8 @@
 # **Causal assumptions**
----
 
-> TL;DR
-> 
-> Establishing causal relationships requires making various assumptions.
-
----
+<div class="highlight-section">
+Establishing causal relationships requires making assumptions.
+</div>
 
 Causal inference does not rely purely on data and statistics. It requires more assumptions for causal relationships to be established.
 
@@ -13,15 +10,12 @@ Causal inference does not rely purely on data and statistics. It requires more a
 [DAGs](dags.md) are a visual way of expressing our beliefs about how different quantities influence each other.
 
 
-As it turns out, DAGs are not enough. **Even with infinite data** and a DAGs in place, **some causal relationships cannot be estimated**.
+As it turns out, DAGs are not enough. *Even with infinite data, some causal relationships cannot be estimated*.
 
----
 
-> TL;DR
-> 
-> **Exchangeability**: assuming if the control and treatment groups were swapped, the results would have been the same.
-
----
+<div class="highlight-section">
+<strong>Exchangeability</strong>: assuming if the control and treatment groups were swapped, the results would have been the same.
+</div>
 
 Formally, exchangeability reads
 
