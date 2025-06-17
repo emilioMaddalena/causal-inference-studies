@@ -18,7 +18,11 @@ Explaining the main concepts around causal learning via bitesize theory and code
 
 
 Complexity score: 
-- :cake:: a piece of :cake:
+
+- :cake:: a piece of cake
+
 - :books:: requires thinking about it
+  
 - :mortar_board:: requires connecting dots
+  
 - :thought_balloon:: it's philosophy
