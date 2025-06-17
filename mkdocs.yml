@@ -13,6 +13,7 @@ nav:
       - Causal effects: causal_effects.md
       - Confounders: confounders.md
       - Confounders cont'd: confounders_contd.md
+      - Causal assumptions: causal_assumptions.md
       - Identification: identification.md
       - A/B testing: ab_testing.md
       - Causal questions: causal_questions.md
