@@ -14,7 +14,11 @@ Explaining the main concepts around causal learning via bitesize theory and code
 | - | Foundations | Causal assumptions |  - | :white_check_mark: | :mortar_board:
 | - | Misc. | Simpson's paradox |  - | - | :mortar_board:
 | - | Misc. | A/B testing |  - | - | :mortar_board:
-| - | Misc. | Causality and time |  - | - | :mortar_board::mortar_board:
+| - | Misc. | Causality and time |  - | - | :thought_balloon:
 
 
-Legend: :cake: simple, :books: complex, :mortar_board: advanced, :mortar_board::mortar_board: philosophy.
+Complexity score: 
+- :cake:: a piece of :cake:
+- :books:: requires thinking about it
+- :mortar_board:: requires connecting dots
+- :thought_balloon:: it's philosophy
