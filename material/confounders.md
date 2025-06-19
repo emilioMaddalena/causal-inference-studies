@@ -32,6 +32,6 @@ There are three main types of confounding structures, which are defined by 3-nod
   <img src="../imgs/confounders6.png" alt="Collider" width="32%" style="display:inline-block;" />
 </div>
 
-At first sight, the collider seems innofensive as there are no arrows going from $Z$ to $X$ or $Y$, so how could it bias our analysis?
+At first sight, the collider seems inoffensive as there are no arrows going from $Z$ to $X$ or $Y$, so how could it bias our analysis?
 
 Well, causal effects respect the arrow directions, but statistical association doesn't. It can flow against them.

@@ -11,10 +11,10 @@ This suggests a strong (and statistically significant) association between choco
 
 Although it's amusing to think chocolate will help you get that smarter, it's also hard to believe that is indeed the case. If you think about it harder though, which of the following conclusions should one draw from such association?
 
-1. Chocolate makes you smarter, leading to a higher count of nobel prizes.
-2. People like to celebrate the winnin of a nobel prize by eating loads of chocolate.
+1. Chocolate makes you smarter, leading to a higher count of Nobel prizes.
+2. People like to celebrate the winning of a Nobel prize by eating loads of chocolate.
 3. Maybe the two above are true.
-4. In wealthy countries people tend to eat more chocolate. Also, they tend to have better education, leading to more nobel prizes.
+4. In wealthy countries people tend to eat more chocolate. Also, they tend to have better education, leading to more Nobel prizes.
 5. Something else entirely...
 
 Even though, mathematically, we can show $X1$ and $X2$ are strongly associated, increasing/activating/enabling/making use of $X1$ won't guarantee the effect $X2$. 

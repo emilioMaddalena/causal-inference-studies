@@ -13,9 +13,9 @@ Below is a nice DAG that makes intuitive sense.
 
 ![alt text](imgs/dag1.png)
 
-Given a node (say *weigth*), a **parent** is a node that directly maps to it (*diet* and *exercise*).
+Given a node (say *weight*), a **parent** is a node that directly maps to it (*diet* and *exercise*).
 
-Given a node (say *weigth*), a **child** is a node that is directly mapped by it (*blood pressure*).
+Given a node (say *weight*), a **child** is a node that is directly mapped by it (*blood pressure*).
 
 ---
 
@@ -70,6 +70,6 @@ where $N_1,...,N_4$ are exogenous variables, also called noise variables. Noise 
 
 ---
 <div class="highlight-section">
-Association can flow against arrrows, causality cannot.
+Association can flow against arrows, causality cannot.
 </div>
 

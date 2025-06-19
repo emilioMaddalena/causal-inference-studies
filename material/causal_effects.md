@@ -13,7 +13,7 @@ Next day you wake up just fine. Was it thanks to the meds or did you body just r
 
 Well, we will never know!
 
-The so-called fundamental problem of causal inference is that **never will we be able to measure causal effects on an individual basis**. And that's because we can't go back in time, intervene (not taking the meds) and verify what happened to be 100% the observed outcome was due to the intervetion.
+The so-called fundamental problem of causal inference is that **never will we be able to measure causal effects on an individual basis**. And that's because we can't go back in time, intervene (not taking the meds) and verify what happened to be 100% the observed outcome was due to the intervention.
 
 ---
 
