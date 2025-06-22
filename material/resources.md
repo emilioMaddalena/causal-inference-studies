@@ -12,6 +12,7 @@
 - Causality for Machine Learning. B. Schölkopf. [[paper](https://arxiv.org/pdf/1911.10500)]
 - Statistical Rethinking, R. McElreath. [[]()]
 - Causal Inference: An overview. A. Deng. [[repo](https://alexdeng.github.io/causal/)]
+- Causal Inference for the Brave and True. M. Facure [[repo]](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
 
 **Videos**
 

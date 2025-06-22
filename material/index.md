@@ -12,6 +12,7 @@ Explaining the main concepts around causal learning via bitesize theory and code
 | - | Foundations | [Confounders](confounders.md) |  - | :white_check_mark: | :books:
 | - | Foundations | [Causal discovery](causal_discovery.md) |  - | :white_check_mark: | :cake:
 | - | Foundations | [Causal assumptions](causal_assumptions.md) |  - | :white_check_mark: | :mortar_board:
+| - | Foundations | [Learners](learners.md) |  - | :white_check_mark: | :mortar_board:
 | - | Misc. | [Debiased/double machine learning](ddml.md) |  - | :white_check_mark: | :mortar_board:
 | - | Misc. | Simpson's paradox |  - | - | :mortar_board:
 | - | Misc. | A/B testing |  - | - | :mortar_board:
