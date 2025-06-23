@@ -32,3 +32,13 @@ There are three main types of confounding structures, which are defined by 3-nod
 At first sight, the collider seems inoffensive as there are no arrows going from $Z$ to $X$ or $Y$, so how could it bias our analysis?
 
 Well, causal effects respect the arrow directions, but statistical association doesn't. It can flow against them.
+
+!!! tip "TL;DR"
+    :sparkles::sparkles::sparkles: Treatment randomization is magical: it makes all confounding go away! :sparkles::sparkles::sparkles: 
+
+If you were to randomly give out ice cream to people, regardless of the season, you would see the association between ice cream and shark attacks disappear.
+
+With the DAG in mind, randomization would **cut the arrow** that connects season and ice cream, disqualifying season as a confounder.
+
+This is the beauty of randomized controlled trials (RCTs), widely employed in medical studies. By randomly assigning patients to the treatment or control group, you break all confounding. No wonder why RCTs are regarded as a gold standard in that field.
+
