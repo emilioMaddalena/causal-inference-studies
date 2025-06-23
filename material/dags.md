@@ -44,7 +44,7 @@ What if a nutritionist comes and says a third variable is missing, $Z$, which re
 If even in the 2-variable case we require more assumptions to draw a sensible DAG, imagine how difficult the task would be with 20 interconnected variables. The process of finding DAGs from data and additional assumptions is called causal discovery.
 
 !!! tip "TL;DR"
-    A DAG highlights links, but an SCM tells you *exactly* how variables are linked, functionally.
+    DAGs define links, but don't tell you **how** variables depend on each other (linearly maybe?)... SCMs give you that last part of the puzzle.
 
 DAGs tell you that two variables are linked, but won't tell you exactly how. A **structural causal model** (SCM), on the other hand, does exactly that.
 
