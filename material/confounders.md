@@ -42,3 +42,17 @@ With the DAG in mind, randomization would **cut the arrow** that connects season
 
 This is the beauty of randomized controlled trials (RCTs), widely employed in medical studies. By randomly assigning patients to the treatment or control group, you break all confounding. No wonder why RCTs are regarded as a gold standard in that field.
 
+!!! tip "TL;DR"
+    Under no confounding, causal inference becomes trivial.
+
+Say you want to estimate the average extra hours of sleep you get if you take some miraculous new medicine
+
+$$\text{ATE} = E[Y(1) - Y(0)]$$
+
+You run an experiment and, if $T$ was randomized, the causal effect is as simple as
+
+$$\text{ATE} = E[Y \, | \, T=1] - E[Y \, | \, T=0]$$
+
+that is, averaging the sleep hours $Y$ among all people who got the med, and subtracting the average sleep hours $Y$ for all who didn't take the med.
+
+N.B. Of course you'd still have to check if the final number is reliable or not (was your sample too small?). The estimator isn't biased, but variance can still hit you hard. 
