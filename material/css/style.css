@@ -17,3 +17,15 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1em;
     font-weight: normal;
 }
+
+/* Change admonition title font size */
+.md-typeset .admonition-title,
+.md-typeset details > summary {
+    font-size: 0.8em;
+}
+
+/* Change admonition content font size */
+.md-typeset .admonition,
+.md-typeset details {
+    font-size: 1em;
+}
