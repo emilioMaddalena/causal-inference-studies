@@ -19,6 +19,39 @@ But perhaps the one below, with season influencing both blue variables, would be
 **The season node is a confounder** as it affects both main variables of interest. In this example, it being summer drives up both ice cream sales and shark incident, giving the impression there is a causal link between the two.
 
 !!! tip "TL;DR"
+    Confounders are bad: If you ignore them, they can mess up your estimates, and sometimes even reverse the sign of a relationship. 
+
+If you fit a linear model to predict shark attacks from ice cream sales, you get a very nice graph (see [notebook](../notebooks/sharks_and_ice_creams.ipynb))
+
+<div style="text-align:center;">
+  <img src="../imgs/ice_cream_no_temp.png" alt="ice cream no temp" width="50%" style="display:inline-block; margin-right:1%;" />
+</div>
+
+Not only that, the linear coefficient of the predictor (ice cream sales) even has a very low p-value
+
+<div style="text-align:center;">
+  <img src="../imgs/ice_cream_no_temp_p_vals.png" alt="ice cream no temp" width="60%" style="display:inline-block; margin-right:1%;" />
+</div>
+
+So it's all statistically sound, right? Time to use of this model to make some great decisions!
+
+---
+
+Well, if you had included temperature, you'd see a very different 
+
+<div style="text-align:center;">
+  <img src="../imgs/ice_cream_temp.png" alt="ice cream no temp" width="50%" style="display:inline-block; margin-right:1%;" />
+</div>
+
+And the p-values of ice-cream are now very high
+
+<div style="text-align:center;">
+  <img src="../imgs/ice_cream_temp_p_vals.png" alt="ice cream no temp" width="60%" style="display:inline-block; margin-right:1%;" />
+</div>
+
+Conclusion: TBW...
+
+!!! tip "TL;DR"
     The three elemental confounds are: the <strong>fork</strong>, the <strong>pipe</strong>, and the <strong>collider</strong>.
 
 There are three main types of confounding structures, which are defined by 3-node diagrams. Any more complex DAG can be analyzed based on these.
