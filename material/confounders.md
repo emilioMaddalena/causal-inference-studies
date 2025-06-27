@@ -5,15 +5,21 @@
 
 You have some data on the monthly ice cream sales in Brazil and the number of shark attacks on a costal region. Both variables are highly correlated as shown below.
 
-<img src="../imgs/confounders1.png" alt="Fork" width="50%" />
+<div style="text-align:center;">
+  <img src="../imgs/confounders1.png" alt="Fork" width="50%" />
+</div>
 
 One could propose the following DAG to try to explain the phenomenon.
 
-<img src="../imgs/confounders2.png" alt="Fork" width="50%" />
+<div style="text-align:center;">
+  <img src="../imgs/confounders2.png" alt="Fork" width="50%" />
+</div>
 
 But perhaps the one below, with season influencing both blue variables, would be a more sensible structure.
 
-<img src="../imgs/confounders3.png" alt="Fork" width="50%" />
+<div style="text-align:center;">
+  <img src="../imgs/confounders3.png" alt="Fork" width="50%" />
+</div>
 
 
 **The season node is a confounder** as it affects both main variables of interest. In this example, it being summer drives up both ice cream sales and shark incident, giving the impression there is a causal link between the two.
