@@ -25,7 +25,7 @@ But perhaps the one below, with season influencing both blue variables, would be
 **The season node is a confounder** as it affects both main variables of interest. In this example, it being summer drives up both ice cream sales and shark incident, giving the impression there is a causal link between the two.
 
 !!! tip "TL;DR"
-    Confounders are bad: If you ignore them, they can mess up your estimates, and sometimes even reverse the sign of a relationship. 
+    Confounders are bad: they can lead you to spurious conclusions if you ignore them. 
 
 If you fit a linear model to predict shark attacks from ice cream sales, you get a very nice graph (see [notebook](../notebooks/sharks_and_ice_creams.ipynb))
 
