@@ -1,8 +1,8 @@
 # **Why causality matters**
 
-<div class="highlight-section">
-Because it is useful in many areas: economics, medicine, marketing, just to name a few.
-</div>
+<a id="TLDR-why-causality-matters-1"></a>
+!!! tip "TL;DR"
+    Because it is useful in many areas: economics, medicine, marketing, just to name a few.
 
 Causal analysis helps us answer questions such as:
 
@@ -24,10 +24,9 @@ Causal analysis helps us answer questions such as:
 
 Not every questions is a valid causal question though. Check [this page](causal_questions.md) if you want to understand the subtleties aroud it.
 
----
-<div class="highlight-section">
-Because, once established, causal relationships generalizes well.
-</div>
+<a id="TLDR-why-causality-matters-2"></a>
+!!! tip "TL;DR"
+    Because, once established, causal relationships generalizes well.
 
 Because they control for confounders and rely on plenty of structure and tests, causal models are considered **more robust than general statistical or ML models**. 
 
@@ -35,10 +34,11 @@ For example, regulatory bodies require pharmaceutical companies to present causa
 
 This is so especially because causal models differentiate between variables that are targets/outputs/effects, versus the ones that are inputs/treatments, and the ones that are confounders. 
 
----
-<div class="highlight-section">
-Because fitting data with every possible covariate can be a bad idea sometimes.
-</div>
+<a id="TLDR-why-causality-matters-3"></a>
+!!! tip "TL;DR"
+    :radioactive_sign: Using every possible covariate can be a bad idea sometimes. :radioactive_sign:
+
+    Causal analysis tools are needed to help you select the right regression variables.
 
 Say you want to study how a variable $X$ affects a quantity of interest $Y$, and you've also collected a number of other signals $Z_i$.
 
