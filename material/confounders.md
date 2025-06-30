@@ -70,6 +70,7 @@ With the DAG in mind, randomization would **cut the arrow** that connects season
 
 This is the beauty of randomized controlled trials (RCTs), widely employed in medical studies. By randomly assigning patients to the treatment or control group, you break all confounding. No wonder why RCTs are regarded as a gold standard in that field.
 
+<a id="TLDR-trivial-causal-inference"></a>
 !!! tip "TL;DR"
     Under no confounding, causal inference becomes trivial.
 
@@ -84,3 +85,20 @@ $$\text{ATE} = E[Y \, | \, T=1] - E[Y \, | \, T=0]$$
 that is, averaging the sleep hours $Y$ among all people who got the med, and subtracting the average sleep hours $Y$ for all who didn't take the med.
 
 N.B. Of course you'd still have to check if the final number is reliable or not (was your sample too small?). The estimator isn't biased, but variance can still hit you hard. 
+
+<a id="TLDR-the-need-for-ci-tools"></a>
+!!! tip "TL;DR"
+    When you can't run experiments, you need causal inference tools. :wrench::hammer:
+
+
+Experiments are great! but sometimes you can't run them for a variety of reasons: costs, regulatory restrictions[^1], ethical implications[^2], and practical infeasibility[^3].
+
+Say you're given **observational data**: some treatment/policy/intervention data points where the units have some features, and you also see some additional covariates, and all those variables interact in certain ways. Then your best bet is to carefully draw a DAG and apply causal inference techniques if you want to draw causal conclusions from the dataset.
+
+This will ensure your model generalizes way better! :sunglasses:
+
+[^1]: You're legally not allowed to manipulate markets in certain ways.
+
+[^2]: You can't expose people to health hazards, e.g. asking some group to smoke.
+
+[^3]: The treatment is having grey-colored eyes, and the control is having any other eye color...
