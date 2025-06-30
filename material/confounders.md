@@ -1,5 +1,6 @@
 # **Confounders**
 
+<a id="TLDR-what-a-confounder-is"></a>
 !!! tip "TL;DR"
     A confounder is a variable that is not the treatment, nor the effect, but that can affect the association between the two.
 
@@ -21,9 +22,9 @@ But perhaps the one below, with season influencing both blue variables, would be
   <img src="../imgs/confounders3.png" alt="Fork" width="50%" />
 </div>
 
-
 **The season node is a confounder** as it affects both main variables of interest. In this example, it being summer drives up both ice cream sales and shark incident, giving the impression there is a causal link between the two.
 
+<a id="TLDR-confounders-are-bad"></a>
 !!! tip "TL;DR"
     Confounders are bad: they can lead you to spurious conclusions if you ignore them. 
 
@@ -55,23 +56,11 @@ And the p-values of ice-cream are now very high
   <img src="../imgs/ice_cream_temp_p_vals.png" alt="ice cream no temp" width="60%" style="display:inline-block; margin-right:1%;" />
 </div>
 
-Conclusion: TBW...
+From our knowledge of how the world works, this second model seems more reasonable than the first one. 
 
-!!! tip "TL;DR"
-    The three elemental confounds are: the <strong>fork</strong>, the <strong>pipe</strong>, and the <strong>collider</strong>.
+Causal inference is all about **making use of that expert knowledge as the first steps of the process**, before estimating any linear/non-linear relationships. In that way, we can better trust the outcomes of our models.
 
-There are three main types of confounding structures, which are defined by 3-node diagrams. Any more complex DAG can be analyzed based on these.
-
-<div style="text-align:center;">
-  <img src="../imgs/confounders4.png" alt="Fork" width="32%" style="display:inline-block; margin-right:1%;" />
-  <img src="../imgs/confounders5.png" alt="Pipe" width="32%" style="display:inline-block; margin-right:1%;" />
-  <img src="../imgs/confounders6.png" alt="Collider" width="32%" style="display:inline-block;" />
-</div>
-
-At first sight, the collider seems inoffensive as there are no arrows going from $Z$ to $X$ or $Y$, so how could it bias our analysis?
-
-Well, causal effects respect the arrow directions, but statistical association doesn't. It can flow against them.
-
+<a id="TLDR-randomization-magic"></a>
 !!! tip "TL;DR"
     :sparkles::sparkles::sparkles: Treatment randomization is magical: it makes all confounding go away! :sparkles::sparkles::sparkles: 
 
