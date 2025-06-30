@@ -1,11 +1,9 @@
 # **Causal questions**
----
 
-> TL;DR
-> 
-> Not every causal-looking question is a valid causal question.
 
----
+<a id="TLDR-valid-causal-questions"></a>
+!!! tip "TL;DR"
+    Not every causal-looking question is a valid causal question.
 
 Consider these:
 
@@ -17,10 +15,7 @@ Consider these:
 
 Question 1. and question 4. are not valid causal questions. In 1. 
 
----
 
-> TL;DR
-> 
-> For a causal question to be valid, we need: consistency, 
-
----
+<a id="TLDR-causal-questions-assumptions"></a>
+!!! tip "TL;DR"
+    For a causal question to be valid, we need: consistency, 
