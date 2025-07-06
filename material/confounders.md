@@ -44,13 +44,13 @@ So it's all statistically sound, right? So if we stop selling ice cream, surely 
 
 ---
 
-Well, if you had included temperature, you'd see a very different 
+Well, if you had included temperature, you'd see a very different picture
 
 <div style="text-align:center;">
   <img src="../imgs/ice_cream_temp.png" alt="ice cream no temp" width="50%" style="display:inline-block; margin-right:1%;" />
 </div>
 
-And the p-values of ice-cream are now very high
+And the p-values of ice cream are now very high
 
 <div style="text-align:center;">
   <img src="../imgs/ice_cream_temp_p_vals.png" alt="ice cream no temp" width="60%" style="display:inline-block; margin-right:1%;" />
