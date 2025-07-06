@@ -16,5 +16,15 @@ Chocolate consumption of countries is highly correlated with the number of Nobel
 
 All those, and many more, could be the source of the observed association.
 
+!!! tip "TL;DR"
+    Causation involves *intervening* on a variable $T$ to affect the distribution of another variable $Y$.
+
+We know flipping a light switch on will make the room get brighter. That's causation in action.
+
+The TL;DR above formalizes this notion using the language of statistics, where the flipping a switch becomes a random variable, and it getting brighter too. It also allows for non-deterministic mechanisms: flipping the switch will probably turn the lights on, but maybe because of poor electrical contact they won't.
+
+If establishing correlation is easy, establishing causation is hard. Sometimes impossible even if you had infinite data!
+
+But don't panic - with the right theory and the right tools, much can be accomplished :sunglasses:
 
 [^1]: Butter consumption is highly correlated with wind power generation! [Check it out](https://www.tylervigen.com/spurious/correlation/2205_butter-consumption_correlates-with_wind-power-generated-in-united-states). This whole website is dedicated to spurious correlations.
