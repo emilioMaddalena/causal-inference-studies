@@ -40,7 +40,7 @@ Not only that, the linear coefficient of the predictor (ice cream sales) even ha
   <img src="../imgs/ice_cream_no_temp_p_vals.png" alt="ice cream no temp" width="60%" style="display:inline-block; margin-right:1%;" />
 </div>
 
-So it's all statistically sound, right? Time to use of this model to make some great decisions!
+So it's all statistically sound, right? So if we stop selling ice cream, surely we'll also save some swimmers lives...
 
 ---
 
