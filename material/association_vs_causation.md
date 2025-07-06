@@ -1,39 +1,20 @@
 # **Association vs causation**
 
-<div class="highlight-section">
-Statistical association (including correlation) does not imply causation. <br>
-That's because correlation can be induced by other phenomena apart from causation.
-</div>
+!!! tip "TL;DR"
+    Statistical association (including correlation) does not imply causation.
 
-Say $X1$ is the annual chocolate consumption (in kg/capita) of a country. $X2$ is the number of Nobel Prize Laureates (per 10^7 inhabitants). If you compute the correlation between $X1$ and $X2$ you could arrive at numbers as high as $R=0.69$ and p-values as low as $p=0.0004$.
+Statistical correlation between variables is very common and easy to find[^1]. Real and solid causation patterns are way harder. That's because **correlation can be induced by other phenomena apart from causation**, and we tend to get confused by it.
 
-This suggests a strong (and statistically significant) association between chocolate consumption and cognitive function enhancement.
+Consider this example :chocolate_bar::chocolate_bar::chocolate_bar:
 
-Although it's amusing to think chocolate will help you get that smarter, it's also hard to believe that is indeed the case. If you think about it harder though, which of the following conclusions should one draw from such association?
+Chocolate consumption of countries is highly correlated with the number of Nobel Prize Laureates they have. Although it's amusing to think chocolate will help you get that smarter, it's also hard to believe that is indeed the case. If you think about it harder though, which of the following conclusions should one draw from such association?
 
 1. Chocolate makes you smarter, leading to a higher count of Nobel prizes.
 2. People like to celebrate the winning of a Nobel prize by eating loads of chocolate.
 3. Maybe the two above are true.
 4. In wealthy countries people tend to eat more chocolate. Also, they tend to have better education, leading to more Nobel prizes.
-5. Something else entirely...
 
-Even though, mathematically, we can show $X1$ and $X2$ are strongly associated, increasing/activating/enabling/making use of $X1$ won't guarantee the effect $X2$. 
+All those, and many more, could be the source of the observed association.
 
----
-<div class="highlight-section">
-Correlation is a very narrow measure of association.
-</div>
 
-Look at the examples below and at how correlated variables $X$ and $Y$ are.
-
-![alt text](imgs/avc1.png)
-
-![alt text](imgs/avc2.png)
-
-![alt text](imgs/avc3.png)
-
-Pearson's correlation (a.k.a. correlation) can capture linear relationships in the upward and downward directions, but fail to capture other functional links (e.g. the quadratic form).
-
-A plethora of other association measures exist. Some handle continuous variables, others handle categorical variables. Each of them will assess one specific type of link between the random variables at hand.
-
-See: [this wikipedia section](https://en.wikipedia.org/wiki/Correlation#Other_measures_of_dependence_among_random_variables) on other measures of dependence.
+[^1]: Butter consumption is highly correlated with wind power generation! [Check it out](https://www.tylervigen.com/spurious/correlation/2205_butter-consumption_correlates-with_wind-power-generated-in-united-states). This whole website is dedicated to spurious correlations.
