@@ -12,6 +12,7 @@ nav:
       - DAGs cont'd: dags_contd.md
       - Causal effects: causal_effects.md
       - Confounders: confounders.md
+      - Feature selection: feature_selection.md
       - Confounders cont'd: confounders_contd.md
       - Causal assumptions: causal_assumptions.md
       - Identification: identification.md

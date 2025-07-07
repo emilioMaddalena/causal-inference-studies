@@ -10,6 +10,7 @@ Explaining the main concepts around causal learning via bitesize theory and code
 | - | Foundations | DAGs cont'd |  - | :white_check_mark: | :cake:
 | - | Foundations | [Causal effects](causal_effects.md) |  - | :white_check_mark: | :books:
 | - | Foundations | [Confounders](confounders.md) |  - | :white_check_mark: | :books:
+| - | Foundations | [Feature selection](feature_selection.md) |  - | :white_check_mark: | :books:
 | - | Foundations | [Causal discovery](causal_discovery.md) |  - | :white_check_mark: | :cake:
 | - | Foundations | [Causal assumptions](causal_assumptions.md) |  - | :white_check_mark: | :mortar_board:
 | - | Foundations | [Learners](learners.md) |  - | :white_check_mark: | :mortar_board:
