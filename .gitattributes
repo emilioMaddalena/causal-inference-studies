@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Mark all .ipynb files as documentation to exclude them from language statistics
+*.ipynb linguist-documentation
+
+# Ensure markdown files are counted in language statistics
+*.md linguist-detectable=true
+*.md linguist-documentation=false
+*.md linguist-language=Markdown
