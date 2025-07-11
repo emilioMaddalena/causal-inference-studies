@@ -2,7 +2,7 @@
 
 <a id="TLDR-the-good-and-the-bad"></a>
 !!! tip "TL;DR"
-    Not every variable should be included in your models.
+    To estimate causal effects well, you need to carefully select your features/predictors/regressors.
 
 Modern machine learning advocates for including all you can in your model, trying to achieve the lowest possible (test) error.
 
