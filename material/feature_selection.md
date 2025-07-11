@@ -16,23 +16,23 @@ If, however, your goals are more causal oriented (see the [causal questions page
 
 then the ML approach can fall short of delivering a good answer. 
 
-<a id="TLDR-the-good-and-the-bad"></a>
+<a id="TLDR-You-need-to-include-confounders"></a>
 !!! tip "TL;DR"
-    You need to include for confounders.
+    You need to include confounders.
 
-<a id="TLDR-the-good-and-the-bad"></a>
+<a id="TLDR-some-variables-are-bad"></a>
 !!! tip "TL;DR"
     Some variables are "bad". Including them will bias your model.
 
-<a id="TLDR-the-good-and-the-bad"></a>
+<a id="TLDR-some-variables-are-neutral"></a>
 !!! tip "TL;DR"
     Some variables are neutral, including them or not doesn't make a difference.
 
-<a id="TLDR-the-good-and-the-bad"></a>
+<a id="TLDR-the-backdoor-criterion-tells-us-which-variables-to-include"></a>
 !!! tip "TL;DR"
     The backdoor criterion tells us which variables to include in our models.
 
-<a id="TLDR-the-good-and-the-bad"></a>
+<a id="TLDR-adjustment-sets-are-equal"></a>
 !!! tip "TL;DR"
     All adjustment sets are equal, but some are more equal than others.
 
