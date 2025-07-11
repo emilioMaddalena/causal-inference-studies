@@ -18,11 +18,11 @@ then the ML approach can fall short of delivering a good answer.
 
 <a id="TLDR-You-need-to-include-confounders"></a>
 !!! tip "TL;DR"
-    You need to include confounders.
+    Some variables must be included. For example, confounders.
 
 <a id="TLDR-some-variables-are-bad"></a>
 !!! tip "TL;DR"
-    Some variables are "bad". Including them will bias your model.
+    Some variables must not be included. Including them will bias your model.
 
 <a id="TLDR-some-variables-are-neutral"></a>
 !!! tip "TL;DR"
