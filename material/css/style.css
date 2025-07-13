@@ -29,3 +29,44 @@ h1, h2, h3, h4, h5, h6 {
 .md-typeset details {
     font-size: 1em;
 }
+
+.causal-table {
+    width: 60%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 0.8em;
+}
+.causal-table th, .causal-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.causal-table th {
+    background-color: #f2f2f2;
+}
+
+.causal-table th, .causal-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.causal-table th {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.causal-table tbody tr:first-child td {
+    font-weight: normal;
+    background-color: transparent;
+}
+
+.causal-table th:nth-child(1), .causal-table td:nth-child(1) {
+    width: 23%;
+}
+.causal-table th:nth-child(2), .causal-table td:nth-child(2) {
+    width: 54%;
+}
+.causal-table th:nth-child(3), .causal-table td:nth-child(3) {
+    width: 23%;
+}
