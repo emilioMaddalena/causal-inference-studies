@@ -19,6 +19,7 @@ nav:
       - A/B testing: ab_testing.md
       - Causal questions: causal_questions.md
       - Propensity scores: propensity_scores.md
+      - Shapley values: shapley_values.md
   - Software: software_packages.md
   - Resources: resources.md
 theme:
