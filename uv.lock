@@ -87,6 +87,7 @@ dependencies = [
     { name = "networkx" },
     { name = "pymc" },
     { name = "pymdown-extensions" },
+    { name = "shap" },
 ]
 
 [package.metadata]
@@ -102,6 +103,7 @@ requires-dist = [
     { name = "networkx", specifier = ">=3.4.2" },
     { name = "pymc", specifier = ">=5.23.0" },
     { name = "pymdown-extensions", specifier = ">=10.15" },
+    { name = "shap", specifier = ">=0.47.2" },
 ]
 
 [[package]]

@@ -16,4 +16,5 @@ dependencies = [
     "pymdown-extensions>=10.15",
     "causalml>=0.15.4",
     "pymc>=5.23.0",
+    "shap>=0.47.2",
 ]
