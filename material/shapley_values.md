@@ -87,5 +87,15 @@ Some would argue that this is not realistic. That if we think our features have 
 Which distribution should it be, though?
 
 - The marginal $p(x_2, x_3)$ ?
-- The marginalS $p(x_2), p(x_3)$?
+- The marginals $p(x_2), p(x_3)$?
 - The conditional $p(x_2, x_3 | \, x_1 = 10)$?
+
+What if you don't have a distribution for your features, but only know max/min values for them. Should you maybe sample the domain uniformly?
+
+**All these approaches are possible, but the resulting shapley values should be interpreted accordingly**[^1].
+
+In fact, researchers are still debating the pros and cons, and theoretical guarantees, of each approach[^2].
+
+[^1]: If for example you disregard a part of your domain where $f$ depends heavily on $x_2$, this won't be reflected on your $\phi_2$ value (and other $\phi_i$ as well).
+
+[^2]: Cite papers.
