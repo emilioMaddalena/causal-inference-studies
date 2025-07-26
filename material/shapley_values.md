@@ -12,6 +12,8 @@ $$f(x) = \phi_0 + \sum_{i} \phi_i$$
 
 where each $\phi_i$ summarizes the contribution of feature $x_i$ to the output! and $\phi_0$ is a baseline constant value.
 
+That's kind of cool, right? **Even if your model isn't linear**, shapley gives you the **isolated contributions of each feature** to the predicted value. 
+
 !!! example 
     
     You have a model to predict someone's expected yearly salary and want to explain why for person $X$, the output was $ 89'000. Shapley could then give you a decomposition such as
@@ -27,8 +29,6 @@ where each $\phi_i$ summarizes the contribution of feature $x_i$ to the output! 
     | **Total** 💰 | 89'000 |
 
     where $\phi_0$ is the average salary predicted by the model.
-
-    That's kind of cool, right? **Even if your model isn't linear**, shapley gives you the **isolated contributions of each feature** to the predicted value. 
 
 At this point we should ask ourselves:
 
@@ -73,3 +73,19 @@ The formula above looks intimidating, but it's actually *a simple weighted sum*.
 But what does $f(\,\cdot\,,20,\,\cdot\,)$ even mean? How can we make that evaluate to a scalar in a sensible way?
 
 Well, there are multiple ways of doing that and, up to this date, people debate what the best thing to do is. Next, we explore some of the possibilities.
+
+--- 
+
+## The many possible flavors
+
+In this section we will see how to turn partially-evaluated function e.g. $f(10, \,\cdot\,,\,\cdot\,)$ into scalars in a reasonable way.
+
+How about setting the components $x_2, x_3$ to zero? Or, more in general, defining a *baseline* vector $\bar x$ from which to borrow components every time we need them? In a demographic model, this could be your average individual, and in a computer vision model, your average input image. That's known as **the baseline approach**.
+
+Some would argue that this is not realistic. That if we think our features have some intrinsic distribution, we should fill the gaps in $f(\,10,\cdot\,,\,\cdot\,)$ by **sampling from the distribution of the missing values**, and summarize what we've seen by reporting an average.
+
+Which distribution should it be, though?
+
+- The marginal $p(x_2, x_3)$ ?
+- The marginalS $p(x_2), p(x_3)$?
+- The conditional $p(x_2, x_3 | \, x_1 = 10)$?
