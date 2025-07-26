@@ -1,5 +1,7 @@
 # **Shapley values**
 
+---
+
 ### Introduction
 
 Shapley values were originally proposed in the 50s as a way of distributing a total prize among a series of players participating in a game. If you imagine **the prize is the model output $y$**, and **the players are the individual features $x_i$**, you can re-use the same theory to better understand ML models!
@@ -37,7 +39,9 @@ At this point we should ask ourselves:
 
 Let's answer them one by one.
 
-### How does the method work?
+---
+
+## How does the method work?
 
 The method is grounded in game theory 🎲 and statistics 📊.
 
@@ -50,6 +54,8 @@ whereas each individual feature contribution $\phi_i$ is given by
 $$\phi_i​=\sum_{S⊆N∖{i}} \frac{​\vert S\vert! \, (\vert N \vert− \vert S \vert−1)!}{\vert N \vert!} \, \Big(f(S∪\{i\})−f(S)\Big)$$
 
 The formula above looks intimidating, but it's actually *a simple weighted sum*. For any so called coalition $S$, the first terms weights its importance, and the second term is the difference in function values when the feature $X_i$ is included vs when it's not included.
+
+**So it's a simple delta!** computed and weighted across all possibles combinations of features. 
 
 !!! example 
 
@@ -64,3 +70,6 @@ The formula above looks intimidating, but it's actually *a simple weighted sum*.
 
     So a coallition $S$ can be thought of as the set of players active in the game.
 
+But what does $f(\,\cdot\,,20,\,\cdot\,)$ even mean? How can we make that evaluate to a scalar in a sensible way?
+
+Well, there are multiple ways of doing that and, up to this date, people debate what the best thing to do is. Next, we explore some of the possibilities.
