@@ -12,7 +12,7 @@ $$f(x) = \phi_0 + \sum_{i} \phi_i$$
 
 where each $\phi_i$ summarizes the contribution of feature $x_i$ to the output! and $\phi_0$ is a baseline constant value.
 
-That's kind of cool, right? **Even if your model isn't linear**, shapley gives you the **isolated contributions of each feature** to the predicted value. 
+That's kind of cool, right? **Even if your model isn't linear**, Shapley gives you the **isolated contributions of each feature** to the predicted value. 
 
 !!! example 
     
@@ -92,10 +92,52 @@ Which distribution should it be, though?
 
 What if you don't have a distribution for your features, but only know max/min values for them. Should you maybe sample the domain uniformly?
 
-**All these approaches are possible, but the resulting shapley values should be interpreted accordingly**[^1].
+**All these approaches are possible, but the resulting Shapley values should be interpreted accordingly**[^1].
 
 In fact, researchers are still debating the pros and cons, and theoretical guarantees, of each approach[^2].
 
 [^1]: If for example you disregard a part of your domain where $f$ depends heavily on $x_2$, this won't be reflected on your $\phi_2$ value (and other $\phi_i$ as well).
 
 [^2]: Cite papers.
+
+---
+
+## A computational example
+
+In [this notebook](../notebooks/shap_example.ipynb), we have a simple 2-layer Neural Network that was trained to learn a certain dataset.
+
+To try and explain our black-box model, we use [SHAP](https://github.com/shap/shap), a popular python package to compute Shapley values. To use it, you just have to instantiate a so-called "explainer", passing your model `mlp` and a dataset `X`.
+
+```python
+import shap
+
+explainer = shap.Explainer(mlp.predict, X)
+shap_values = explainer(X)
+```
+
+This will compute the values for the entire dataset. To visualize them for a particular point in the domain, say the $20$th where $x_1 = 6.12, x_2 = 6.58, x_3 = 7.92$, you can plot a nice waterfall plot
+
+```python
+i=20
+shap.plots.waterfall(shap_values[i])
+```
+
+<div style="text-align:center;">
+  <img src="../imgs/shap_1.png" alt="shap 1" width="70%" />
+</div>
+
+which gives you $\phi_0 = 132.635$, $\phi_1 = 42.45$, $\phi_2 = -19.09$ and $\phi_3 = 10.65$, for a final prediction of $f(x) = 166.649$.
+
+But that's only for a single datapoint. If you wanna know the rest of the story, how the Shapley values look across the entire dataset $X$, you can call the `summary_plot` method
+
+```python
+shap.summary_plot(shap_values, X)
+```
+
+<div style="text-align:center;">
+  <img src="../imgs/shap_2.png" alt="shap 2" width="70%" />
+</div>
+
+The plots tell us $x_2$ has a negative effect on the output (note in the second plot how the blue and red colors are "reversed"). Also, $x_1$ seems to have overall the highest impact on the predictions. It turns out these explanations are very aligned with our ground-truth, which was $f(x_1, x_2, x_3) = 5 x_1^2 - 10 x_2 + 5 x_3$[^3].
+
+[^3]: N.B. the package is trying to explain the **model**, not the ground-truth. If the training was flawed or the data had too much noise, the model would be a bad representation of it, and the Shapley values wouldn't reflect the ground-truth at all.
