@@ -92,13 +92,9 @@ Which distribution should it be, though?
 
 What if you don't have a distribution for your features, but only know max/min values for them. Should you maybe sample the domain uniformly?
 
-**All these approaches are possible, but the resulting Shapley values should be interpreted accordingly**[^1].
-
-In fact, researchers are still debating the pros and cons, and theoretical guarantees, of each approach[^2].
+**All these approaches are possible, but the resulting Shapley values should be interpreted accordingly**[^1]. 
 
 [^1]: If for example you disregard a part of your domain where $f$ depends heavily on $x_2$, this won't be reflected on your $\phi_2$ value (and other $\phi_i$ as well).
-
-[^2]: Cite papers.
 
 ---
 
@@ -132,6 +128,8 @@ shap.summary_plot(shap_values, X)
   <img src="../imgs/shap_2.png" alt="shap 2" width="70%" />
 </div>
 
-The plots tell us $x_2$ has a negative effect on the output (note in the second plot how the blue and red colors are "reversed"). Also, $x_1$ seems to have overall the highest impact on the predictions. It turns out these explanations are very aligned with our ground-truth, which was $f(x_1, x_2, x_3) = 5 x_1^2 - 10 x_2 + 5 x_3$[^3]! 😇
+The plots tell us $x_2$ has a negative effect on the output (note in the second plot how the blue and red colors are "reversed"). Also, $x_1$ seems to have overall the highest impact on the predictions. It turns out these explanations are very aligned with our ground-truth, which was $f(x_1, x_2, x_3) = 5 x_1^2 - 10 x_2 + 5 x_3$[^2][^3]! 😇
 
-[^3]: N.B. the package is trying to explain the **model**, not the ground-truth. If the training was flawed or the data had too much noise, the model would be a bad representation of it, and the Shapley values wouldn't reflect the ground-truth at all.
+[^2]: N.B. the package is trying to explain the **model**, not the ground-truth. If the training was flawed or the data had too much noise, the model would be a bad representation of it, and the Shapley values wouldn't reflect the ground-truth at all.
+
+[^3]: Also, if you were wondering, SHAP defaults to *marginally sampling* the group of missing features, i.e., sampling from $p(x_2,x_3)$ when $x_1$ is given.
