@@ -18,3 +18,12 @@ dependencies = [
     "pymc>=5.23.0",
     "shap>=0.47.2",
 ]
+
+[tool.ruff]
+include = ["*.py", "*.ipynb"]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["D", "N", "I", "E501", "E", "F"]
+ignore = ["ANN", "D410", "D413", "D100", "D211", "D213", "D203"]
+
