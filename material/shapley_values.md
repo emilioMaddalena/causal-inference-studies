@@ -133,3 +133,22 @@ The plots tell us $x_2$ has a negative effect on the output (note in the second 
 [^2]: N.B. the package is trying to explain the **model**, not the ground-truth. If the training was flawed or the data had too much noise, the model would be a bad representation of it, and the Shapley values wouldn't reflect the ground-truth at all.
 
 [^3]: Also, if you were wondering, SHAP defaults to *marginally sampling* the group of missing features, i.e., sampling from $p(x_2,x_3)$ when $x_1$ is given.
+
+---
+
+## Shapley properties
+
+How do Shapley values behave, though? What properties can we expect them to have?
+
+Here's a summary:
+
+| Property | Explanation | Math | 
+|--|--|--|
+| Efficiency | The sum of all Shapley values equals the function output | $\sum \phi_i = f(x)$ |
+| Symmetry | Features with the same contributions get equal Shapley values | $f(S \cup \{i\}) = f(S \cup \{j\}), \forall S \implies \phi_i = \phi_j$
+| Null player | Features that don't contribute have zero Shapley values | $f(S \cup \{i\}) = f(S), \forall S \implies \phi_i = 0$|
+| Linearity | Shapley values respect linearity of $f$ | $f = \alpha g + \beta h \implies \phi_{f,i} = \alpha\phi_{g,i} + \beta\phi_{h,i}$|
+
+Additional properties are listed in [this paper](https://proceedings.mlr.press/v119/sundararajan20b/sundararajan20b.pdf) and on the following [wikipedia page](https://en.wikipedia.org/wiki/Shapley_value).
+
+What is important to keep in mind is that some Shapley versions do not satisfy the extended set of properties. Still, those are supposed to help you build an intuition around how they behave and how they should be interpreted in practice.
