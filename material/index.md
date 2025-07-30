@@ -2,7 +2,7 @@
 
 Explaining the main concepts around causal learning via bitesize theory and code!
 
-### Intro
+**Introduction**
 
 <table class="causal-table">
   <thead>
@@ -20,7 +20,7 @@ Explaining the main concepts around causal learning via bitesize theory and code
   </tbody>
 </table>
 
-### Core concepts
+**Core concepts**
 
 <table class="causal-table">
   <thead>
@@ -39,7 +39,7 @@ Explaining the main concepts around causal learning via bitesize theory and code
 </table>
 
 
-### Misc
+**Miscellaneous**
 
 <table class="causal-table">
   <thead>
@@ -55,6 +55,7 @@ Explaining the main concepts around causal learning via bitesize theory and code
     <tr><td>10</td><td>Causal assumptions</td><td>🎓</td></tr>
     <tr><td>11</td><td>A/B testing</td><td>🎓</td></tr>
     <tr><td>12</td><td>Causality and time</td><td>💭</td></tr>
+    <tr><td>13</td><td><a href="shapley_values">Shapley values</a></td><td>🎓</td></tr>
   </tbody>
 </table>
 
