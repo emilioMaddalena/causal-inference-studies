@@ -100,7 +100,7 @@ What if you don't have a distribution for your features, but only know max/min v
 
 ## A computational example
 
-In [this notebook](../notebooks/shap_example.ipynb), we have a simple 2-layer Neural Network that was trained to learn a certain dataset.
+In [this notebook](https://github.com/emilioMaddalena/causal-inference-studies/blob/main/notebooks/shap_example.ipynb), we have a simple 2-layer Neural Network that was trained to learn a certain dataset.
 
 To try and explain our black-box model, we use [SHAP](https://github.com/shap/shap): first, instantiate a so-called "explainer", passing your model `mlp` and a dataset `X`. Next, you pass you dataset to the explainer again, which will compute the values for the entire dataset. To see what they look like for the $20$th data point, you can use a nice waterfall plot
 

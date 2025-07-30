@@ -12,7 +12,7 @@ Failing to do that will lead to biased estimates, for instance concluding that [
 
 When you have *a collider* between treatment and outcome for example, that variable is best left alone. 
 
-In [this notebook](../notebooks/education_wage_investments.ipynb), we explore how education (E) could affect wages (W). It turns out we also have access to how much money our subjects invest (I), and decided to add that to our model since it could provide some extra insights, right? :thinking_face:
+In [this notebook](https://github.com/emilioMaddalena/causal-inference-studies/blob/main/notebooks/education_wage_investments.ipynb), we explore how education (E) could affect wages (W). It turns out we also have access to how much money our subjects invest (I), and decided to add that to our model since it could provide some extra insights, right? :thinking_face:
 
 Well, here's the DAG we have at hand
 

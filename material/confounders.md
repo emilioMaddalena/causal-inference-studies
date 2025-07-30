@@ -28,7 +28,7 @@ But perhaps the one below, with season influencing both blue variables, would be
 !!! tip "TL;DR"
     Confounders are bad: they can lead you to spurious conclusions if you ignore them. 
 
-If you fit a linear model to predict shark attacks from ice cream sales, you get a very nice graph (see [notebook](../notebooks/sharks_and_ice_creams.ipynb))
+If you fit a linear model to predict shark attacks from ice cream sales, you get a very nice graph (see [notebook](https://github.com/emilioMaddalena/causal-inference-studies/blob/main/notebooks/sharks_and_ice_creams.ipynb))
 
 <div style="text-align:center;">
   <img src="../imgs/ice_cream_no_temp.png" alt="ice cream no temp" width="50%" style="display:inline-block; margin-right:1%;" />
