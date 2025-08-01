@@ -20,6 +20,7 @@ nav:
       - Causal questions: causal_questions.md
       - Propensity scores: propensity_scores.md
       - Shapley values: shapley_values.md
+      - Shapley cont'd: shapley_contd.md
   - Software: software_packages.md
   - Resources: resources.md
 theme:
@@ -41,7 +42,15 @@ markdown_extensions:
   - codehilite
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.emoji
+  - fenced_code
+  - pymdownx.superfences
   - footnotes
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
