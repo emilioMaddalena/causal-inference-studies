@@ -12,8 +12,6 @@ $$f(x) = \phi_0 + \sum_{i} \phi_i$$
 
 where each $\phi_i$ summarizes the contribution of feature $x_i$ to the output! and $\phi_0$ is a baseline constant value.
 
-That's kind of cool, right? **Even if your model isn't linear**, Shapley gives you the **isolated contributions of each feature** to the predicted value. 
-
 !!! example 
     
     You have a model to predict someone's expected yearly salary and want to explain why for person $X$, the output was $ 89'000. Shapley could then give you a decomposition such as
@@ -30,14 +28,7 @@ That's kind of cool, right? **Even if your model isn't linear**, Shapley gives y
 
     where $\phi_0$ is the average salary predicted by the model.
 
-At this point we should ask ourselves:
-
-- How does this method work? 
-- What properties does it have?
-- What are its limitations?
-- Are these contributions linked to causal effects?
-
-Let's answer them one by one.
+That's kind of cool, right? **Even if your model isn't linear**, Shapley gives you the **isolated contributions of each feature** to the predicted value. 
 
 ---
 
@@ -98,6 +89,7 @@ What if you don't have a distribution for your features, but only know max/min v
 
 ---
 
+<a id="Shapley-example"></a>
 ## A computational example
 
 In [this notebook](https://github.com/emilioMaddalena/causal-inference-studies/blob/main/notebooks/shap_example.ipynb), we have a simple 2-layer Neural Network that was trained to learn a certain dataset.
@@ -128,27 +120,12 @@ shap.summary_plot(shap_values, X)
   <img src="../imgs/shap_2.png" alt="shap 2" width="70%" />
 </div>
 
-The plots tell us $x_2$ has a negative effect on the output (note in the second plot how the blue and red colors are "reversed"). Also, $x_1$ seems to have overall the highest impact on the predictions. It turns out these explanations are very aligned with our ground-truth, which was $f(x_1, x_2, x_3) = 5 x_1^2 - 10 x_2 + 5 x_3$[^2][^3]! 😇
+The plots tell us $x_1$ seems to have overall the highest impact on the predictions (largest spread). Also, $x_1$ and $x_3$ have a positive impact on the model output for higher feature values (red), whereas $x_2$ has a *negative* effect on the output (note how the blue and red colors are reversed). Looking at our ground-truth
+
+$$f(x_1, x_2, x_3) = 5 x_1^2 - 10 x_2 + 5 x_3$$
+ 
+it turns out these explanations are very much aligned with it[^2][^3]! 😇
 
 [^2]: N.B. the package is trying to explain the **model**, not the ground-truth. If the training was flawed or the data had too much noise, the model would be a bad representation of it, and the Shapley values wouldn't reflect the ground-truth at all.
 
 [^3]: Also, if you were wondering, SHAP defaults to *marginally sampling* the group of missing features, i.e., sampling from $p(x_2,x_3)$ when $x_1$ is given.
-
----
-
-## Shapley properties
-
-How do Shapley values behave, though? What properties can we expect them to have?
-
-Here's a summary:
-
-| Property | Explanation | Math | 
-|--|--|--|
-| Efficiency | The sum of all Shapley values equals the function output | $\sum \phi_i = f(x)$ |
-| Symmetry | Features with the same contributions get equal Shapley values | $f(S \cup \{i\}) = f(S \cup \{j\}), \forall S \implies \phi_i = \phi_j$
-| Null player | Features that don't contribute have zero Shapley values | $f(S \cup \{i\}) = f(S), \forall S \implies \phi_i = 0$|
-| Linearity | Shapley values respect linearity of $f$ | $f = \alpha g + \beta h \implies \phi_{f,i} = \alpha\phi_{g,i} + \beta\phi_{h,i}$|
-
-Additional properties are listed in [this paper](https://proceedings.mlr.press/v119/sundararajan20b/sundararajan20b.pdf) and on the following [wikipedia page](https://en.wikipedia.org/wiki/Shapley_value).
-
-What is important to keep in mind is that some Shapley versions do not satisfy the extended set of properties. Still, those are supposed to help you build an intuition around how they behave and how they should be interpreted in practice.
