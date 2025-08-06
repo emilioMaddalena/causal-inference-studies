@@ -57,6 +57,12 @@ X_4 &= f_4(X_2, X_3, N_4) \nonumber
 
 where $N_1,...,N_4$ are exogenous variables, also called noise variables. Noise variables are assumed to be jointly independent.
 
+At first sight, you could think the $N_i$ components are there just to account for *random fluctuations* of the $X_i$ such as noise in your measurement instrument. In practice, though, they're there also to capture **the influence of all variables that you didn't include in your DAG**.
+
+Think of all the possible factors that influence someone's blood pressure. Could you list them all? Can you measure them all? Probably not. 
+
+So long as the un-measures variables don't interact with each other (that is, the $N_i$s are jointly independent) CI tools will work just fine!
+
 !!! tip "TL;DR"
     Association can flow against arrows, causality cannot.
 
