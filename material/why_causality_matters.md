@@ -22,7 +22,7 @@ So, in essence, causal inference helps us understand and predict what will happe
 
 **If your goal is to change variable $Y$ by acting on variable $X$, you need causal analysis**.
 
-Throwing every variable you have at your model can lead to serious interpretability issues, and make you believe you can drive $Y$ when you actually can't. Sometimes it can reverse signs in a linear model, suggesting the link between a given $X$ and a $Y$ is positive when it's actually negative...[^1] 
+Throwing every variable you have at your model can lead to serious interpretability issues, and make you believe you can drive $Y$ when you actually can't. Sometimes it reverses signs in linear models, suggesting the link between a given $X$ and a $Y$ is positive when it's actually negative...[^1] 
 
 Causal inference tool help us build models that generalize well and with which we can make robust *interventions*[^2].
 
@@ -42,4 +42,4 @@ We, humans, think causally:
 
 By studying causality, you gain the statistical knowledge necessary to analyze those statements more rigorously, in the hopes of validating/invalidating them. 
 
-Maybe whenever you're stressed at work you end up visiting the coffee machine more often. So *coffee isn't really to blame for your mood*, your boss is! ☕ 👀
+Maybe whenever you're stressed at work you end up visiting the coffee machine more often. So *coffee isn't really to blame for your mood*—your boss is! ☕ 👀
