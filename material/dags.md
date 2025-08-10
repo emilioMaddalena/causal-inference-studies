@@ -3,37 +3,58 @@
 !!! tip "TL;DR"
     DAGs are visual ways of expressing connections between variables.
 
-Directed acyclic graphs (DAGs) are an easy way of expressing your beliefs about a set of variables. 
+Directed acyclic graphs (DAGs) are an intuitive way of expressing your beliefs about a set of variables. 
 
 A DAG has one node per variable and a set of edges connecting the nodes. Also, edges must be directed and, by going around the graph following them, you should not be able to find any loops. 
 
-Below is a nice DAG that makes intuitive sense.
+Take a look at this one DAG and see if you agree with it
 
-![alt text](imgs/dag1.png)
+<div style="text-align:center;">
+  <img src="../imgs/dag1.png" alt="dag1" width="50%" />
+</div>
 
-Given a node (say *weight*), a **parent** is a node that directly maps to it (*diet* and *exercise*).
+According to it, exercise influences blood pressure directly, maybe because it increases your bpm right away. But it also influences blood pressure indirectly, by reducing your weight, thus reducing your blood pressure.
 
-Given a node (say *weight*), a **child** is a node that is directly mapped by it (*blood pressure*).
+Below is some terminology:
+
+- Given a node (say *weight*), a **parent** is a node that directly maps to it (*diet* and *exercise*).
+- Given a node (say *weight*), a **child** is a node that is directly mapped by it (*blood pressure*).
+- A **root node** is a node with no parents (*diet* and *exercise*).
+- A **leaf node** is a node with no children (*blood pressure*).
+- A **directed path** is a path across nodes that doesn't go against any arrows (e.g. *exercise* -> *weight* -> *blood pressure*)
+- A node (say *blood pressure*) is a **descendant** of another node (*diet*) if there's a directed path linking the latter to the former.
 
 !!! tip "TL;DR"
     DAGs do not encode plain statistical independence, but conditional independence.
 
-Take the following DAG:
+Take the following DAG
 
-![alt text](imgs/dag2.png)
+<div style="text-align:center;">
+  <img src="../imgs/dag2.png" alt="dag2" width="50%" />
+</div>
 
-It **does not imply/encode that $X1$ and $X4$ are independent**. It instead encodes the fact that, given all its parents ($X3$ and $X2$), the node $X4$ becomes independent of every one else ($X1$).
+**It does not imply/encode that $X1$ and $X4$ are independent**. It instead encodes the fact that, given all its parents ($X3$ and $X2$), the node $X4$ becomes independent of every one else ($X1$).
 
-Mathematically, $X1 \perp X4 \; | \; (X3, X2)$.
+Mathematically, $X1 \perp X4 \; | \; (X3, X2)$. Or, more generally,
 
-Thinking back at the blood pressure example, the graph says blood pressure is indeed dependent on the diet even if diet is not its parent. However, if one fixes a given weight and exercise level, then the diet would have *no influence* on an individual's blood pressure!
+$$X_i \perp \text{NonDesc}(X_i) \; | \; \text{Pa}(X_i)$$
+
+where $\text{NonDesc}(X_i)$ are all non-descendants of $X_i$. This is called the **local Markov property**.
+
+This leads to the following factorization formula for DAGs
+
+$$P(X_1, X_2, \dots, X_n) = \prod_{i=1}^{n} P(X_i \; | \; \text{Pa}(X_i))$$
+
+which is known as the **Markov factorization of DAGs**.
 
 !!! tip "TL;DR"
     Data alone (without any expert knowledge) is insufficient to arrive at a single DAG.
 
 Say you're given the data below, which clearly show $X1$ and $X2$ are strongly associated. Which DAG would represent it best?
 
-![alt text](imgs/dag3.png)
+<div style="text-align:center;">
+  <img src="../imgs/dag3.png" alt="dag3" width="50%" />
+</div>
 
 $X \rightarrow Y$ would be a reasonable first try... but if I told you $X$ is body weight and $Y$ is monthly chocolate consumption, then perhaps $Y \rightarrow X$?
 
