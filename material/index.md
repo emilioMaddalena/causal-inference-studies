@@ -31,8 +31,7 @@ Explaining the main concepts around causal learning via bitesize theory and code
     </tr>
   </thead>
   <tbody>
-    <tr><td>05</td><td><a href="dags">DAGs</a></td><td>🍰</td></tr>
-    <tr><td>06</td><td><a href="dags_contd">DAGs cont'd</a></td><td>🍰</td></tr>
+    <tr><td>05</td><td><a href="dags">DAGs</a></td><td>📚</td></tr>
     <tr><td>07</td><td><a href="causal_effects">Causal effects</a></td><td>🍰</td></tr>
     <tr><td>07</td><td><a href="feature_selection">Feature selection</a></td><td>🍰</td></tr>
   </tbody>

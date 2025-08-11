@@ -15,14 +15,14 @@ Take a look at this one DAG and see if you agree with it
 
 According to it, exercise influences blood pressure directly, maybe because it increases your bpm right away. But it also influences blood pressure indirectly, by reducing your weight, thus reducing your blood pressure.
 
-Below is some terminology:
-
-- Given a node (say *weight*), a **parent** is a node that directly maps to it (*diet* and *exercise*).
-- Given a node (say *weight*), a **child** is a node that is directly mapped by it (*blood pressure*).
-- A **root node** is a node with no parents (*diet* and *exercise*).
-- A **leaf node** is a node with no children (*blood pressure*).
-- A **directed path** is a path across nodes that doesn't go against any arrows (e.g. *exercise* -> *weight* -> *blood pressure*)
-- A node (say *blood pressure*) is a **descendant** of another node (*diet*) if there's a directed path linking the latter to the former.
+!!! example "Here's some terminology"
+    - Given a node (say *weight*), a **parent** is a node that directly maps to it (*diet* and *exercise*).
+    - Given a node (say *weight*), a **child** is a node that is directly mapped by it (*blood pressure*).
+    - A **root node** is a node with no parents (*diet* and *exercise*).
+    - A **leaf node** is a node with no children (*blood pressure*).
+    - A **directed path** is a path across nodes that doesn't go against any arrows (e.g. *exercise* -> *weight* -> *blood pressure*)
+    - A node (say *blood pressure*) is a **descendant** of another node (*diet*) if there's a directed path linking the latter to the former.
+    - Check [this wikipedia page](https://en.wikipedia.org/wiki/Glossary_of_graph_theory) for a comprehensive glossary!
 
 !!! tip "TL;DR"
     DAGs do not encode plain statistical independence, but conditional independence.
