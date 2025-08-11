@@ -49,6 +49,7 @@ Explaining the main concepts around causal learning via bitesize theory and code
     </tr>
   </thead>
   <tbody>
+    <tr><td>06</td><td><a href="dags_with_math">DAGs with math</a></td><td>🎓</td></tr>
     <tr><td>08</td><td>Causal questions</td><td>💭</td></tr>
     <tr><td>09</td><td><a href="attribution">Attribution</a></td><td>🎓</td></tr>
     <tr><td>10</td><td>Causal assumptions</td><td>🎓</td></tr>
