@@ -9,7 +9,7 @@ nav:
       - Why causality matters: why_causality_matters.md
       - Association vs causation: association_vs_causation.md
       - DAGs: dags.md
-      - DAGs cont'd: dags_contd.md
+      - DAGs 2: dags_2.md
       - Causal effects: causal_effects.md
       - Confounders: confounders.md
       - Feature selection: feature_selection.md
