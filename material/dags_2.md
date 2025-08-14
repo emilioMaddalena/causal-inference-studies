@@ -74,5 +74,17 @@ $$
 
 So $p(X,Y) = p(X) \, p(Y|X) = p(X) p (Y)$, which is the definition of the independence $X \perp Y$.
 
+!!! abstract "Final remarks"
+
+    At this point we know that paths can be opened and closed, so...
+
+    - Which paths should we open and which should we close?
+    - How can this be generalized to more complex graphs?
+    - What if I need to condition on a variable I actually didn't measure?
+
+    Basically, we first need to define what exactly it is we want to measure. Maybe the "direct" influence of $X$ on $Y$, or the "total" influence perhaps? Different causal effect are discussed [here](causal_effects.md).
+
+    Next we need to understand what roles the other variables in the DAG play in this analysis, and block any potentially unwanted association. Confounders, i.e. variables that could corrupt our analysis, are tackled [here](confounders.md). A general criterion for deciding what to block and what not to block is given [here](feature_selection_2.md).
+
 [^1]: The first equality follows from the def. of the conditional probability. The second, from the Markov factorization above.
 [^2]: The first equality follows from the def. of the conditional probability. The second, from the Markov factorization above. The third, from the product rule. The fourth, from the definition of the conditional probability.
