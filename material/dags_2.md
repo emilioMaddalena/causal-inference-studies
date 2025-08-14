@@ -11,7 +11,9 @@ These are important basic structures that can be used to analyze more complex DA
   <img src="../imgs/confounders6.png" alt="Collider" width="32%" style="display:inline-block;" />
 </div>
 
-In the TL;DRs below, we will explore basic...
+Because those variables are all linked, **statistical association can in principle be found between any pair of variables**. That's what causes you to see links between quantities you'd otherwise think are completely (causally) unrelated. 
+
+But worry not! It turns out we can stop spurious associations from contaminating our estimates. We do that simply by conditioning on (aka controlling for) the right variables, which causes variables that are not causally linked to not display associations anymore. In the CI jargon, that's referred to as **blocking paths**.
 
 !!! tip "TL;DR"
     In a fork, conditioning on $Z$ blocks the path between $X$ and $Y$.
