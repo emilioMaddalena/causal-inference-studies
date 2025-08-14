@@ -1,7 +1,7 @@
 # **DAGs 2**
 
 !!! tip "TL;DR"
-    The <strong>fork</strong>, the <strong>pipe</strong>, and the <strong>collider</strong> are three elemental building blocks.
+    The <strong>fork</strong>, the <strong>pipe</strong>, and the <strong>collider</strong> are three elemental building blocks of any DAG.
 
 These are important basic structures that can be used to analyze more complex DAGs.
 
@@ -52,7 +52,7 @@ $$
 which is the definition of the conditional independence $X \perp Y  \, | \, Z$.
 
 !!! tip "TL;DR"
-    In a collider, conditioning on $Z$ **OPENS THE PATH** between $X$ and $Y$.
+    In a collider, the path between $X$ and $Y$ **is naturally closed**.
 
 From the Markov factorization of the fork, we have
 
