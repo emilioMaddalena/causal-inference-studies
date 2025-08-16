@@ -21,6 +21,7 @@ nav:
       - Propensity scores: propensity_scores.md
       - Shapley values: shapley_values.md
       - Shapley cont'd: shapley_contd.md
+      - Probability refresher: probability_refresher.md
   - Software: software_packages.md
   - Resources: resources.md
 theme:
