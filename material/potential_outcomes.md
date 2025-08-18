@@ -1,0 +1,17 @@
+The potential outcomes (PO) model (aka Rubin Causal Model) was proposed by [Donald Rubin](https://en.wikipedia.org/wiki/Donald_Rubin), a famous psychologist/statistician.
+
+There is a group of people sitting at a crossroads point, a bifurcation. What happens to them is captured by the $Y_i$ variables. Each person could either take the left path ($T=0$) or go right ($T=1$), and that'd lead them to the futures $Y_i(0)$ or $Y_i(1)$. 
+
+- Person $7$ goes left and you measure their outcome $Y_7 = Y_7(0)$
+- But what would have happened if they had gone right? 
+- Sadly, you will never ever *measure* both $Y_7(0)$ and $Y_7(1)$[^1]...
+- Can you say something about $Y(1)$ maybe, i.e. what happens across individuals if they take the left path?
+- Maybe if enough data is captured, you could estimate $E[Y(0)]$?
+- On average, is it better to go left or right?
+- Can you put a number to $E[Y(0) - Y(1)]$?
+
+<div style="text-align:center;">
+  <img src="../imgs/PO.png" alt="po" width="40%" style="display:inline-block; margin-right:1%;" />
+</div>
+
+[^1]: That's called *the fundamental problem of causal inference*.
