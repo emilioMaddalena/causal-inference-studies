@@ -25,4 +25,22 @@ Conditioning $Y|T=1$ limits your sample to those points where the units were "tr
 
 Because your dataset $Y$ contains some parts of the puzzle, under the right supporting assumptions, you can estimate lots of interesting quantities.
 
+!!! tip "TL;DR"
+    Identification is the process of inferring things about $Y(0)$ and/or $Y(1)$ from the observational data you have, $Y$.
+
+The average treatment effect (ATE) is defined as the expected difference 
+
+$$\tau = E[Y(1) - Y(0)]$$
+
+This is what you want to know when you ask yourself "*does eating one apple a day really keep the doctor away???*"
+
+Here one quick idea: how about computing the average outcome among apple lovers $E[Y|T=1]$ and subtracting that from the apple haters $E[Y|T=0]$ we have in our sample set?
+
+Well, it turns out this can sometimes go very very wrong...
+
+If in reality you're **missing important variables in your analysis**, those could *confound* your groups and mess-up your results! Imagine that, by chance, all smokers ended up in your $T=0$ group, whereas all the young athletes loved fruits and had $T=1$. In that case you'll certainly conclude the apples kept the doctor away.
+
+You then have two ways out: either balancing your groups[^2] or taking the additional variables (smoking, doing sports, etc) explicitly into account. The more general principle at play here, what guarantees we can perform causal inference, is the one that follows.
+
 [^1]: That's called *the fundamental problem of causal inference*.
+[^2]: [Randomized controlled trials](https://en.wikipedia.org/wiki/Randomized_controlled_trial) (RCTs) do exactly that.
