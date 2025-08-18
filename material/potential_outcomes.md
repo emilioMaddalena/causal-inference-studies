@@ -10,8 +10,19 @@ There is a group of people sitting at a crossroads point, a bifurcation. What ha
 - On average, is it better to go left or right?
 - Can you put a number to $E[Y(0) - Y(1)]$?
 
+!!! tip "TL;DR"
+    The PO approach is all about measuring **what happened** $Y$, but also **what could have been** $Y(0)$ and $Y(1)$.
+
+Of course, for every individual $Y_i$ will either match $Y_i(0)$ or $Y_i(1)$, but you'll never have the complete picture. One of the two outcomes will be missing. We refer to the missing one as the *counterfactual* outcome.
+
+One key concept to understand is the difference between analyzing a potential outcome $Y(1)$ and conditioning on a treatment $Y|T=1$. The difference is illustrated by the diagram below
+
 <div style="text-align:center;">
   <img src="../imgs/PO.png" alt="po" width="40%" style="display:inline-block; margin-right:1%;" />
 </div>
+
+Conditioning $Y|T=1$ limits your sample to those points where the units were "treated" as desired. On the other hand, **the quantity $Y(1)$ is a thought experiment **where all units received the desired treatment. 
+
+Because your dataset $Y$ contains some parts of the puzzle, under the right supporting assumptions, you can estimate lots of interesting quantities.
 
 [^1]: That's called *the fundamental problem of causal inference*.
