@@ -34,7 +34,15 @@ showing that coffee consumption has essentially no effect on sales (the confiden
 
 You manage to convince your boss to drop the coffee distribution, the day is saved. 🌟
 
+!!! note 
+    The first model (*coffee consumption* to *sales*) was statistically sound, no problem with that. What you can't do is draw causal conclusions from its coefficients, Or changing $X$ in the hopes of steering the $Y$ variable. That said, adding *company size* as a variable made the coefficients match our intuition, our knowledge of how the world works. That was useful.
 
+    Some questions linger:
+
+    - Is the second model "causal"?
+    - Should we look for more variables?
+    - Should we always add all variables we have to the model?
+    - Under which assumptions can I rest assured my model is interpretable?
 
 [^1]: This indicates that the association you've found was not due to mere chance.
 
