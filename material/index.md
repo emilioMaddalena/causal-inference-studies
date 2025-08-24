@@ -69,4 +69,8 @@ Complexity score:
 - 🟡: requires thinking about it, involves some math
 - 🔴: requires connecting dots, it's more rigorous
 
-[Probability refresher](probability_refresher.md)
+---
+
+If you need a quick refresher on probability, check out [this page](probability_refresher.md).
+
+External material such as books, video lectures, repos and Python packages are listed [here](resources.md).

@@ -25,7 +25,6 @@ nav:
       - Shapley values: shapley_values.md
       - Shapley cont'd: shapley_contd.md
       - Identification: identification.md
-  - 📑 Resources: resources.md
 theme:
   name: material
   features:
