@@ -4,26 +4,28 @@ repo_url: https://github.com/emilioMaddalena/causal-inference-studies
 repo_name: GitHub
 docs_dir: material
 nav:
-  - Home: index.md
-  - Lessons:
+  - 🏠 Home: index.md
+  - 🍰 Introduction:
       - Why causality matters: why_causality_matters.md
+      - When regression goes wrong: when_regression_goes_wrong.md
+      - When regression goes wrong 2: when_regression_goes_wrong_2.md
       - Association vs causation: association_vs_causation.md
+      - Confounders: confounders.md
+      - Causal questions: causal_questions.md
+  - 📚 Core concepts:
+      - Potential outcomes: potential_outcomes.md
+      - Causal effects: causal_effects.md
       - DAGs: dags.md
       - DAGs 2: dags_2.md
-      - Causal effects: causal_effects.md
-      - Confounders: confounders.md
       - Feature selection: feature_selection.md
-      - Confounders cont'd: confounders_contd.md
-      - Causal assumptions: causal_assumptions.md
-      - Identification: identification.md
+      - Feature selection 2: feature_selection_2.md
+  - 🎓 Advanced topics:
       - A/B testing: ab_testing.md
-      - Causal questions: causal_questions.md
-      - Propensity scores: propensity_scores.md
+      - Simpson's paradox: simpsons_paradox.md
       - Shapley values: shapley_values.md
       - Shapley cont'd: shapley_contd.md
-      - Probability refresher: probability_refresher.md
-  - Software: software_packages.md
-  - Resources: resources.md
+      - Identification: identification.md
+  - 📑 Resources: resources.md
 theme:
   name: material
   features:
