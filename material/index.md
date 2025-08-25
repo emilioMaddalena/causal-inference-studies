@@ -15,7 +15,7 @@ Explaining the main concepts around causal learning via bitesize theory and code
   <tbody>
     <tr><td>01</td><td><a href="why_causality_matters">Why causality matters</a></td><td>🟢</td></tr>
     <tr><td>02</td><td><a href="when_regression_goes_wrong">When regression goes wrong</a></td><td>🟢</td></tr>
-    <tr><td>03</td><td><a href="when_regression_goes_wrong">When regression goes wrong 2</a></td><td>🟢</td></tr>
+    <tr><td>03</td><td><a href="when_regression_goes_wrong_2">When regression goes wrong 2</a></td><td>🟢</td></tr>
     <tr><td>04</td><td><a href="defining_causation">Defining causation</a></td><td>🟢</td></tr>
     <tr><td>05</td><td>Non-causal problems</td><td>🟢</td></tr>
   </tbody>

@@ -9,9 +9,8 @@ nav:
       - Why causality matters: why_causality_matters.md
       - When regression goes wrong: when_regression_goes_wrong.md
       - When regression goes wrong 2: when_regression_goes_wrong_2.md
-      - Association vs causation: association_vs_causation.md
-      - Confounders: confounders.md
-      - Causal questions: causal_questions.md
+      - Defining causation: defining_causation.md
+      - Non-causal problems: non_causal_problems.md
   - 📚 Core concepts:
       - Potential outcomes: potential_outcomes.md
       - Causal effects: causal_effects.md
