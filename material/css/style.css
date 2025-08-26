@@ -70,3 +70,45 @@ h1, h2, h3, h4, h5, h6 {
 .causal-table th:nth-child(3), .causal-table td:nth-child(3) {
     width: 23%;
 }
+
+
+.notebooks-table {
+    width: 80%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 0.8em;
+}
+.notebooks-table th, .causal-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.notebooks-table th {
+    background-color: #f2f2f2;
+}
+
+.notebooks-table th, .notebooks-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.notebooks-table th {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.notebooks-table tbody tr:first-child td {
+    font-weight: normal;
+    background-color: transparent;
+}
+
+.notebooks-table th:nth-child(1), .notebooks-table td:nth-child(1) {
+    width: 25%;
+}
+.notebooks-table th:nth-child(2), .notebooks-table td:nth-child(2) {
+    width: 15%;
+}
+.notebooks-table th:nth-child(3), .notebooks-table td:nth-child(3) {
+    width: 60%;
+}
