@@ -3,3 +3,4 @@
 .DS_Store
 notes.md
 /notebooks/__pycache__
+*.pyc

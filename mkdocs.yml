@@ -3,6 +3,9 @@ site_url: https://emiliomaddalena.github.io/causal-inference-studies/
 repo_url: https://github.com/emilioMaddalena/causal-inference-studies
 repo_name: GitHub
 docs_dir: material
+plugins:
+  - search
+  - mkdocs-jupyter
 nav:
   - 🏠 Home: index.md
   - 🍰 Introduction:
@@ -24,6 +27,12 @@ nav:
       - Shapley values: shapley_values.md
       - Shapley cont'd: shapley_contd.md
       - Identification: identification.md
+  - 💻 Notebooks: 
+      - Contents: all_notebooks.md
+      - Sharks and ice cream: notebooks/sharks_and_ice_creams.ipynb
+      - Fertilizer and crop yield: notebooks/fertilizer_and_crop_yield.ipynb
+      - Education and wage: notebooks/education_wage_investments.ipynb
+      - SHAP Example: notebooks/shap_example.ipynb
 theme:
   name: material
   features:

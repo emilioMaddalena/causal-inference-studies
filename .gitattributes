@@ -8,3 +8,6 @@
 *.md linguist-detectable=true
 *.md linguist-documentation=false
 *.md linguist-language=Markdown
+*.ipynb	diff=jupyternotebook
+
+*.ipynb	merge=jupyternotebook
