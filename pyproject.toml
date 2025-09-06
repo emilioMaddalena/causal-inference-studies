@@ -17,6 +17,9 @@ dependencies = [
     "causalml>=0.15.4",
     "pymc>=5.23.0",
     "shap>=0.47.2",
+    "mkdocs-jupyter>=0.25.1",
+    "nbdime>=4.0.2",
+    "plotly>=6.3.0",
 ]
 
 [tool.ruff]
