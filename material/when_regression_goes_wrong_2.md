@@ -51,7 +51,13 @@ Let's then just drop that extra variable $I$ and see what happens. Sure enough, 
   <img src="../imgs/regression_goes_wrong_2.png" alt="Fork" width="70%" />
 </div>
 
+!!! note "Final remarks"
+    Adding all variables didn't cut it... 
 
+    We wanted to simply get a linear coefficient right in such a simple setting and we failed! Not only that, but **the bias was so strong that the sign was reversed!**
 
+    The solution was to drop one of the variables, but why? 🤔🤔
+
+    There must be a good explanation for this, a rigorous method for arriving at reliabe, unbiased coefficients. Well, there is!
 
 
