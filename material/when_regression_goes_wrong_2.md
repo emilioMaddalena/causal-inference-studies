@@ -45,7 +45,7 @@ You take your data and run MCMC to see how the data is gonna transform your prio
 
 This is really upsetting because even though the pairplot above hinted at the relationship being positive (the more educated, the higher the wage), you see your fancy Bayesian machine pointing at a clearly negative coefficient! 😭
 
-Let's then just drop that extra variable $I$ and see what happens. Sure enough, as soon as you do that, voilà, a much better plot presents itself to you. Since I created the data generating process, I also plotted the true causal effect for you to see. The causal effect was $-20$ all along and the simpler model captured it correctly.
+Let's then just drop that extra variable $I$ and see what happens. Sure enough, as soon as you do that, voilà, a much better plot presents itself to you. Since I created the data generating process, I also plotted the true causal effect for you to see. The causal effect was $+20$ all along and the simpler model captured it correctly.
 
 <div style="text-align:center;">
   <img src="../imgs/regression_goes_wrong_2.png" alt="Fork" width="70%" />
