@@ -1,13 +1,13 @@
 # **When regression goes wrong 2**
 
 !!! note "Intro"
-    After going through the [coffee and paper sales](when_regression_goes_wrong.md) pickle, you've learned your lesson: never miss an important variable! Or, more explicitly...
+    After going through the [coffee and paper sales](when_regression_goes_wrong.md) pickle, you've learned your lesson: never miss an important variable! Maybe we could take this to the extreme and simply adhere to
 
     <div style="text-align:center;">
     *Models should have access to as many variables as possible, and ML will figure out their true relationship!*
     </div>
 
-    Right? Well... Not so fast!
+    Well... Not so fast!
 
 You are asked to study some new dataset, composed of the following variables:
 
