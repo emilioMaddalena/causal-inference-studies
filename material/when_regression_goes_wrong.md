@@ -1,5 +1,10 @@
 # **When regression goes wrong**
 
+!!! note "Intro"
+    Here's an example of how **even ordinary linear regression with two variables can be dangerous**!
+
+    Being more precise, we will see that no business decisions can be made based on one of the models...
+
 You're a data scientist at an office supply company (maybe Dunder Mifflin 📎) and are given this dataset by your manager
 
 <div style="text-align:center;">
@@ -33,7 +38,7 @@ showing that coffee consumption has essentially no effect on sales (the confiden
 
 You manage to convince your boss to drop the coffee distribution, the day is saved. 🌟
 
-!!! note 
+!!! note "Final remarks"
     The first model (*coffee consumption* to *sales*) was statistically sound, no problem with that. What you can't do is draw causal conclusions from its coefficients, or changing $X$ in the hopes of steering the $Y$ variable. Adding *company size* as a variable made the coefficients match our intuition, our knowledge of how the world works, and that was useful.
 
     Some questions linger:
