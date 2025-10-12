@@ -1,6 +1,6 @@
 # **When regression goes wrong 2**
 
-!!! note "Intro"
+!!! tip "Intro"
     After going through the [coffee and paper sales](when_regression_goes_wrong.md) pickle, you've learned your lesson: never miss an important variable! Maybe we could take this to the extreme and simply adhere to
 
     <div style="text-align:center;">
@@ -51,7 +51,7 @@ Let's then just drop that extra variable $I$ and see what happens. Sure enough, 
   <img src="../imgs/regression_goes_wrong_2.png" alt="Fork" width="70%" />
 </div>
 
-!!! note "Final remarks"
+!!! tip "Final remarks"
     Adding all variables didn't cut it... 
 
     We wanted to simply get a linear coefficient right in such a simple setting and we failed! Not only that, but **the bias was so strong that the sign was reversed!**
