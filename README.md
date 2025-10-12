@@ -6,8 +6,8 @@
   <br>
 </p>
 
-<div style="text-align:center;">
-  <img src="https://github.com/emilioMaddalena/causal-inference-studies/blob/main/material/imgs/repo_logo.png?raw=true" alt="logo" width="30%" />
+<div align="center">
+  <img src="https://github.com/emilioMaddalena/causal-inference-studies/blob/main/material/imgs/repo_logo.png?raw=true" alt="logo" width="30%"/>
 </div>
 
 <p align="center">
