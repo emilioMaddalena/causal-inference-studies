@@ -16,6 +16,7 @@ Here's a list of all jupyter notebooks and what they cover.
     <tr><td><a href="../notebooks/fertilizer_and_crop_yield">Fertilizer and crop yield</a></td><td>🌶️🌶️</td><td>Confounding causing bias in Bayesian estimation.</td></tr>
     <tr><td><a href="../notebooks/education_wage_investments">Education and wage</a></td><td>🌶️🌶️</td><td>Collider bias causing a positive effect to appear negative.</td></tr>
     <tr><td><a href="../notebooks/sleeping_pills">Sleeping pills</a></td><td>🌶️🌶️</td><td>Using the S-learner and T-learner to estimate CATEs.</td></tr>
+    <tr><td><a href="../notebooks/uplift_modelling">Uplift modelling</a></td><td>🌶️🌶️🌶️</td><td>A more complex CATE estimation example.</td></tr>
     <tr><td><a href="../notebooks/shap_example">SHAP explanations</a></td><td>🌶️🌶️</td><td>Using SHAP to explain a neural network.</td></tr>
   </tbody>
 </table>
