@@ -43,12 +43,18 @@ theme:
     - navigation.sections
     - toc.integrate
   palette:
+    - scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
     - scheme: default
       primary: blue
       accent: light blue
-    - scheme: slate
-      primary: blue
-      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
 markdown_extensions:
   - admonition
   - codehilite
