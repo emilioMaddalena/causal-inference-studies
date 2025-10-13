@@ -25,8 +25,14 @@ Can't run A/B tests? No problem, causal inference can help you estimate the effe
 
 #### Contributing
 
-- Edit/create new markdowns in `material`, modify the site structure in `mkdocs.yml` if needed
-- Numerical examples are welcomed too
-- Create a PR! 
+This project is in its infancy 🐥🐥🐥
 
-We use `mkdocs` to compile the site. To test it locally, install it, then run `mkdocs build` and `mkdocs serve`.
+If you have questions or suggestions for improvement, open an issue! 😄
+
+If you wanna give me a hand... thanks! Help is needed on the following fronts:
+
+- Creating a notebook example with a continuous treatment
+- Create a page to define causal identification and explain why it matters
+- Create a page explaining the problem of causal discovery 
+
+Check out `CONTRIBUTING.md` for a short guide on how to modify the project and propose new changes!
