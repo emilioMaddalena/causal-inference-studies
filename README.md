@@ -31,8 +31,9 @@ If you have questions or suggestions for improvement, open an issue! 😄
 
 If you wanna give me a hand... thanks! Help is needed on the following fronts:
 
-- Creating a notebook example with a continuous treatment
-- Create a page to define causal identification and explain why it matters
-- Create a page explaining the problem of causal discovery 
+- [ ] Adding, in general, more DAG theory and examples
+- [ ] Creating a notebook example with a continuous treatment
+- [ ] Creating a page to define causal identification and explain why it matters
+- [ ] Creating a page explaining the problem of causal discovery 
 
 Check out `CONTRIBUTING.md` for a short guide on how to modify the project and propose new changes!
