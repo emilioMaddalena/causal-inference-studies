@@ -1,6 +1,8 @@
 # causal-inference-studies
 
-Explaining the main concepts around causal learning via bitesize theory and code!
+Explaining the main concepts around causal learning via bitesize theory and code! 
+
+The notebooks can be found [on this page](notebooks) 💻, whereas the lessons are listed below 👇.
 
 **Introduction**
 
