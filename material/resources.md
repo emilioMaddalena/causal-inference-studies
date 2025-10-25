@@ -17,6 +17,7 @@
 - (2000) *Causality - Models, Reasoning and Inference*. J. Pearl.
 - (2010) *Causal Inference - What If*. M. A. Hernán, J. M. Robins.
 - (2017) *Elements of Causal Inference - Foundations and Learning Algorithms*. J. Peters, D. Janzing, B. Schölkopf.
+- (2024) *Causal Inference: A Statistical Learning Approach*. S. Wager. 
 
 ---
 
@@ -25,6 +26,7 @@
 - (2019) *MIT Lectures on Causal Inference for Healthcare*. [[YouTube](https://www.youtube.com/watch?v=gRkUhg9Wb-I)]
 - (2017) *Lectures on Causality series*, J. Peters. [[YouTube](https://www.youtube.com/watch?v=zvrcyqcN9Wo)]
 - (2015) *Towards Causal Machine Learning*, B. Schölkopf. [[YouTube](https://www.youtube.com/watch?v=ooeRlw3U2zU)]
+- (2021) *Machine Learning and Causal Inference*, Stanford. S. Wager. [[YouTube](https://www.youtube.com/watch?v=ZA8iOjUR8aY&list=PLxq_lXOUlvQAoWZEqhRqHNezS30lI49G-&index=5)]
   
 ---
 
