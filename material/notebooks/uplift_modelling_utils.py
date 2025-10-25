@@ -137,7 +137,7 @@ def data_generating_process(
 
     # Mild idiosyncratic noise
     rng_noise = np.random.default_rng(seed + 13)
-    uplift_logit += rng_noise.normal(0, 0.05, size=n)
+    uplift_logit += rng_noise.normal(0, 0.02, size=n)
 
     # Potential outcomes
     logit_y0 = baseline_logit
@@ -153,6 +153,7 @@ def data_generating_process(
             "client_id": np.arange(n),
             "Y": Y,
             "T": T,
+            "true_uplift": p_y1 - p_y0,
             "channel": channel,
             "device": device,
             "lead_time": lead_time,
