@@ -1,15 +1,16 @@
+from typing import Literal
 import numpy as np
 import pandas as pd
 
 
 def data_generating_process(
-    n: int, 
-    setting: str, 
+    n: int,
+    setting: str,
     seed: int = 123,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Generate a synthetic dataset for uplift modeling in a lodging marketplace.
 
-    Out of the two frames that are returned, `data` is the one that would be available 
+    Out of the two frames that are returned, `data` is the one that would be available
     in practice, as meta_data contains counterfactual information.
 
     Args:
@@ -28,10 +29,11 @@ def data_generating_process(
             - Y: conversion result [binary, 0/1]
             - T: treatment [binary, 0/1]
             - p_treat: treatment propensity used in generation
-            - true_p_y0: conversion probability if untreated 
+            - true_p_y0: conversion probability if untreated
             - true_p_y1: conversion probability if treated
             - true_uplift: true individual uplift (p_y1 - p_y0)
     """
+
     def sigmoid(z):
         return 1.0 / (1.0 + np.exp(-z))
 
@@ -128,8 +130,8 @@ def data_generating_process(
         + 0.25 * ((lead_time >= 8) & (lead_time <= 60))
         + 0.20 * (funnel_depth == 0)
         + 0.15 * (funnel_depth == 1)
-        - 0.05 * (funnel_depth == 3)
-        + 0.10 * (past_coupon_user == 1)
+        - 0.10 * (funnel_depth == 3)
+        - 0.20 * (past_coupon_user == 1)
         - 0.08 * (device == "app")  # app users a bit less elastic
         + 0.05
         * ((price_sort_used == 1) & ((lead_time >= 8) & (lead_time <= 60)))  # mild interaction
@@ -137,7 +139,7 @@ def data_generating_process(
 
     # Mild idiosyncratic noise
     rng_noise = np.random.default_rng(seed + 13)
-    uplift_logit += rng_noise.normal(0, 0.02, size=n)
+    uplift_logit += rng_noise.normal(0, 0.05, size=n)
 
     # Potential outcomes
     logit_y0 = baseline_logit
@@ -178,3 +180,55 @@ def data_generating_process(
         }
     )
     return data, meta_data
+
+
+def binned_validation(
+    y_true: np.ndarray,
+    scores: dict[str, np.ndarray],
+    bin_var: Literal["true", "pred"] = "true",
+    n_bins: int = 20,
+) -> pd.DataFrame:
+    """Binned validation plot for multiple models.
+
+    Build shared bins across multiple prediction arrays using the mean rank
+    across models, then compute per-bin mean true uplift and per-model mean predictions.
+
+    Returns a long DataFrame with columns:['bin', 'model', 'mean_true', 'mean_pred', 'count'].
+    """
+    # Validate lengths
+    n = len(y_true)
+    for k, v in scores.items():
+        if len(v) != n:
+            raise ValueError(f"Length mismatch for model '{k}': got {len(v)} vs y_true {n}")
+
+    # Aggregate rank per sample across models to define shared bins
+    ranks = [pd.Series(v).rank(method="average", pct=True).to_numpy() for v in scores.values()]
+    mean_rank = np.mean(np.column_stack(ranks), axis=1)
+
+    # Quantile bins on the aggregated rank
+    if bin_var == "pred":
+        bins = pd.qcut(mean_rank, q=n_bins, labels=False, duplicates="drop")
+    elif bin_var == "true":
+        bins = pd.qcut(y_true, q=n_bins, labels=False, duplicates="drop")
+
+    # Build a working frame
+    df = pd.DataFrame({"bin": bins, "y_true": y_true})
+    for name, v in scores.items():
+        df[name] = v
+
+    # Summarize into long format
+    rows = []
+    for b, g in df.groupby("bin"):
+        mean_true = g["y_true"].mean()
+        cnt = len(g)
+        for name in scores.keys():
+            rows.append(
+                {
+                    "bin": int(b),
+                    "model": name,
+                    "mean_true": float(mean_true),
+                    "mean_pred": float(g[name].mean()),
+                    "count": int(cnt),
+                }
+            )
+    return pd.DataFrame(rows).sort_values(["model", "bin"]).reset_index(drop=True)
