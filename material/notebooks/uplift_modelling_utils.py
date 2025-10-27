@@ -232,3 +232,27 @@ def binned_validation(
                 }
             )
     return pd.DataFrame(rows).sort_values(["model", "bin"]).reset_index(drop=True)
+
+
+def uplift_curve(u_true: np.ndarray, scores: np.ndarray):
+    """Uplift curve computation.
+
+    Build uplift curve by sorting by predicted scores (descending) and
+    accumulating the true uplift. Returns fractions, normalized cumulative uplift, AUUC.
+    """
+    order = np.argsort(scores)[::-1]
+    u_sorted = u_true[order]
+    n = len(u_sorted)
+    frac = np.arange(1, n + 1) / n
+    cum_u = np.cumsum(u_sorted)
+    total_u = np.sum(u_true)
+
+    # Normalize to show share of total uplift captured (final value ~1 if total uplift > 0)
+    if np.isclose(total_u, 0.0):
+        y = cum_u  # fallback (no normalization possible)
+        auuc = np.trapezoid(y, frac)
+    else:
+        y = cum_u / total_u
+        auuc = np.trapezoid(y, frac)
+
+    return frac, y, auuc
