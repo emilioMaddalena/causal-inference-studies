@@ -75,7 +75,7 @@ def data_generating_process(
     if setting == "observational":
         # Higher propensity for price-sensitive & shallow-funnel sessions, paid channels, recent exposure
         logit_p_treat = (
-            -1.0
+            -3.0
             + 1.2 * (channel == "paid_search")
             + 0.6 * (channel == "email")
             + 0.5 * (price_sort_used == 1)
@@ -125,21 +125,21 @@ def data_generating_process(
     # True treatment effect on log-odds (uplift_logit): depends on realistic, not all, features
     uplift_logit = (
         0.45 * (price_sort_used == 1)
-        + 0.35 * (channel == "paid_search")
+        + 1.35 * (channel == "paid_search")
         + 0.20 * (channel == "email")
         + 0.25 * ((lead_time >= 8) & (lead_time <= 60))
-        + 0.20 * (funnel_depth == 0)
+        + 0.50 * (funnel_depth == 0)
         + 0.15 * (funnel_depth == 1)
-        - 0.10 * (funnel_depth == 3)
-        - 0.20 * (past_coupon_user == 1)
-        - 0.08 * (device == "app")  # app users a bit less elastic
+        - 0.20 * (funnel_depth == 3)
+        - 0.25 * (past_coupon_user == 1)
+        - 0.15 * (device == "app")  # app users a bit less elastic
         + 0.05
         * ((price_sort_used == 1) & ((lead_time >= 8) & (lead_time <= 60)))  # mild interaction
     )
 
     # Mild idiosyncratic noise
     rng_noise = np.random.default_rng(seed + 13)
-    uplift_logit += rng_noise.normal(0, 0.05, size=n)
+    uplift_logit += rng_noise.normal(0, 0.02, size=n)
 
     # Potential outcomes
     logit_y0 = baseline_logit
