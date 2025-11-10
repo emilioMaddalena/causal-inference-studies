@@ -1,4 +1,4 @@
-<h2 align="center">causal-inference-studies</h2>
+<h2 align="center"><a href="https://emiliomaddalena.github.io/causal-inference-studies">causal-inference-studies</a></h2>
 
 <p align="center">
   🎯🎯 Bitesize causal inference lessons for data scientists and ML engineers! 🎯🎯
@@ -10,18 +10,22 @@
 </div>
 
 <p align="center">
-  <a href="https://emiliomaddalena.github.io/causal-inference-studies">main page</a>
+  <a href="https://emiliomaddalena.github.io/causal-inference-studies">lessons</a>
   ··
   <a href="https://emiliomaddalena.github.io/causal-inference-studies/notebooks/">notebooks</a>
   ··
   <a href="https://emiliomaddalena.github.io/causal-inference-studies/resources/">resources</a>
 </p>
 
+- - -
+
 #### Motivation
 
 Causal inference can make your ML models generalize better, especially when you want to take robust actions based on them.
 
-Can't run A/B tests? No problem, causal inference can help you estimate the effect of an intervention even from observational data!
+Can't run A/B tests? No problemo! Causal inference can help you estimate the effect of an intervention even from observational data!
+
+- - -
 
 #### Contributing
 
