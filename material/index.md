@@ -55,7 +55,7 @@ The notebooks can be found [on this page](notebooks) 💻, whereas the lessons a
     </tr>
   </thead>
   <tbody>
-    <tr><td>-</td><td>Simpson's paradox</td><td>🟡</td></tr>
+    <tr><td>-</td><td><a href="simpsons_paradox">Simpson's paradox</a></td><td>🟡</td></tr>
     <tr><td>-</td><td>DAGs with math</td><td>🔴</td></tr>
     <tr><td>-</td><td>Attribution</td><td>🔴</td></tr>
     <tr><td>-</td><td>Causal assumptions</td><td>🟡</td></tr>
