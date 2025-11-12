@@ -1,4 +1,4 @@
-<h2 align="center"><a href="https://emiliomaddalena.github.io/causal-inference-studies">causal-inference-studies</a></h2>
+<h1 align="center"><a href="https://emiliomaddalena.github.io/causal-inference-studies">causal-inference-studies</a></h1>
 
 <p align="center">
   🎯🎯 Bitesize causal inference lessons for data scientists and ML engineers! 🎯🎯
