@@ -17,6 +17,7 @@ nav:
       - DAGs: dags.md
       - DAGs 2: dags_2.md
   - 🎓 Advanced topics:
+      - Simpson's paradox: simpsons_paradox.md
       - Shapley values: shapley_values.md
       - Shapley cont'd: shapley_contd.md
   - 💻 Notebooks: 
