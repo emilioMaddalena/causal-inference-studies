@@ -1,6 +1,6 @@
 # **Simpson's paradox**
 
-### Intro
+### Introduction
 
 Simpson's paradox highlights how we can reach **totally opposite conclusions** if we aren't careful in our analyses.
 
@@ -39,10 +39,14 @@ Why does this happen and how do we get around it?
 
 ### Explanation
 
-There's actually nothing paradoxical about this phenomenon. It turns out **Simpson's paradox is just a result of confounding** in action. 
+There's actually no paradox here: it turns out **Simpson's paradox is just a result of strong confounding** in action. 
 
 Coming back to the kidney stones example, the first hospital could host patients with small stones, and the second hospital patients with large stones. What's more, we see from the tables that there's a preference for treatment B in the first hospital, and for A in the second. So **stone size affects both treatment assignment and (we surmise) the chance of success** - the definition of a confounder.
 
--- ADD IMAGE HERE --
+From the first hospital, we assigned many (270) people to treatment B, and collected also many (234) successes. Note that the lower success rate in that case is 87%, which is much higher than the 69% from the second table. In summary, treatment B is fairly effective and there was enough bias to collect enough success cases for B to result in it winning over A in the combined case.
 
+<div style="text-align:center;">
+  <img src="../imgs/simpson_1.png" alt="shap 2" width="70%" />
+</div>
 
+How to deal with it, you ask? Treatment randomization and controlling for confounders are two good starting points... 😉
