@@ -44,6 +44,24 @@ The notebooks can be found [on this page](notebooks) 💻, whereas the lessons a
 </table>
 
 
+**Randomized and experimental data**
+
+<table class="causal-table">
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Lesson</th>
+      <th>Complexity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>-</td><td>A/B tests</a></td><td>🟢</td></tr>
+    <tr><td>-</td><td>Non-randomized studies</a></td><td>🟢</td></tr>
+    <tr><td>-</td><td>Matching methods</td><td>🟡</td></tr>
+  </tbody>
+</table>
+
+
 **Advanced topics**
 
 <table class="causal-table">
