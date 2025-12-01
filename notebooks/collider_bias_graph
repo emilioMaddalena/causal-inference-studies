@@ -1,0 +1,9 @@
+digraph {
+	rankdir=LR
+	E [label=Education]
+	W [label=Wage]
+	I [label=Investments]
+	E -> W
+	E -> I
+	W -> I
+}
