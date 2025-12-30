@@ -1,7 +1,7 @@
 # **Randomized data: why and how**
 
 !!! tip "TL;DR"
-    Randomized data is gold. When you have it, estimating ATEs becomes amounts to a difference in means.
+    Randomized data is gold. When you have it, estimating ATEs amounts to a difference in means.
 
 When we say "randomized", we mean our dataset is free of bias. 
 
