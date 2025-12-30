@@ -20,22 +20,26 @@ $$
 or, in plain English, the ATE is a simple difference between the average outcome in the treated and control groups.
 
 
+!!! example "Example"
+    A clinical trial for a new sleeping medication attracted $1000$ participants: $478$ were given the drug and $522$ were given placebo.
 
+    The number of people in each group is almost the same, which is great. On top of that, the baseline sleep time and age of each participant were also recorded. The distributions are the following.
 
-!!! tip "TL;DR"
-    A/B test and RCTs, when done right, give you randomized data. And Randomized data is gold.
+    <div style="text-align:center;">
+      <img src="../imgs/rct_data_1.png" alt="dag1" width="100%" />
+    </div>
 
-Directed acyclic graphs (DAGs) are an intuitive way of expressing your beliefs about a set of variables. 
+    The plots reinforce the idea that **participants were assigned to the groups randomly** as there's no clear mismatch between distributions. Let's finally assume we're not missing any key feature the doctors could have used to discriminate people... In that case, the causal effect of this new medication can be easily derived from the outcome variable: the post-treatment sleep hours.
 
+    <div style="text-align:center;">
+      <img src="../imgs/rct_data_2.png" alt="dag1" width="50%" />
+    </div>
 
-!!! tip "TL;DR"
-    Randomized
-
-
-!!! tip "TL;DR"
-    A/B tests are a form of randomized control trials (RCTs)and ensure no sample bias, leading to an easy estimation of average treatment effects.
+    For that we simply compute the difference in means (average blue minus average orange), and get confidence intervals via bootstrapping. The result is an ATE of $\tau = 0.87$ hours with a 95%-CI of $[0.73, 1.01]$.
     
-Directed acyclic graphs (DAGs) are an intuitive way of expressing your beliefs about a set of variables. 
+    Not bad given the real ATE used to generate the data was $0.85$! 😉
+
+
 
 Resources:
 
