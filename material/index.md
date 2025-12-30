@@ -55,9 +55,9 @@ The notebooks can be found [on this page](notebooks) 💻, whereas the lessons a
     </tr>
   </thead>
   <tbody>
-    <tr><td>-</td><td>A/B tests</a></td><td>🟢</td></tr>
-    <tr><td>-</td><td>Non-randomized studies</a></td><td>🟢</td></tr>
-    <tr><td>-</td><td>Matching methods</td><td>🟡</td></tr>
+    <tr><td>-</td><td><a href="randomized_data_why_and_how">Randomized data: why and how</a></td><td>🟢</td></tr>
+    <tr><td>-</td><td>When random is not possible...</a></td><td>🟢</td></tr>
+    <tr><td>-</td><td>Matching methods in practice</td><td>🟡</td></tr>
   </tbody>
 </table>
 
