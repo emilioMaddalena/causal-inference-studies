@@ -44,7 +44,7 @@ The notebooks can be found [on this page](notebooks) 💻, whereas the lessons a
 </table>
 
 
-**Randomized and experimental data**
+**Randomized and observational data**
 
 <table class="causal-table">
   <thead>
@@ -55,9 +55,9 @@ The notebooks can be found [on this page](notebooks) 💻, whereas the lessons a
     </tr>
   </thead>
   <tbody>
-    <tr><td>-</td><td><a href="randomized_data_why_and_how">Randomized data: why and how</a></td><td>🟢</td></tr>
-    <tr><td>-</td><td>When random is not possible...</a></td><td>🟢</td></tr>
-    <tr><td>-</td><td>Matching methods in practice</td><td>🟡</td></tr>
+    <tr><td>-</td><td><a href="randomized_data_why_and_how">Randomized data</a></td><td>🟢</td></tr>
+    <tr><td>-</td><td><a href="observational_data_how_confounded">Observational data: how confounded?</a></td><td>🟢</td></tr>
+    <tr><td>-</td><td>Observational data: matching methods</td><td>🟡</td></tr>
   </tbody>
 </table>
 
