@@ -1,4 +1,4 @@
-# **Randomized data: why and how**
+# **Randomized data**
 
 !!! tip "TL;DR"
     Randomized data is gold. When you have it, estimating ATEs amounts to a difference in means.
@@ -39,6 +39,7 @@ or, in plain English, the ATE is a simple difference between the average outcome
     
     Not bad given the real ATE used to generate the data was $0.85$! 😉
 
+Intuitively, if both the treatment and control groups are samples from the same underlying distribution, any statistical difference in the measured outcome is due to the intervention![^1]
 
 
 Resources:
@@ -46,3 +47,5 @@ Resources:
 https://alexdeng.github.io/causal/abintro.html
 
 *The Relationship between Experimentation and Causal Inference*. Sean Taylor. [[video](https://www.youtube.com/watch?v=5Myw5A-ZILs)]
+
+[^1]: The outcome, in this case the post-treatment sleep hours, has some natural variability to it. If the treatment effect is small compared to this natural fluctuation, it'll be harder to detect it of course!  
