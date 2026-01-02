@@ -1,0 +1,149 @@
+body {
+    font-size: 25px;
+}
+
+html body {
+    font-size: 25px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #003366;
+    font-weight: bold;
+}
+
+.highlight-section {
+    background-color: #FAEDCB;
+    color: #003366;
+    padding: 1em;
+    font-weight: normal;
+}
+
+/* Change admonition title font size */
+.md-typeset .admonition-title,
+.md-typeset details > summary {
+    font-size: 0.8em;
+}
+
+/* Change admonition content font size */
+.md-typeset .admonition,
+.md-typeset details {
+    font-size: 1em;
+}
+
+.causal-table {
+    width: 60%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 0.8em;
+}
+.causal-table th, .causal-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.causal-table th {
+    background-color: #f2f2f2;
+}
+
+.causal-table th, .causal-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.causal-table th {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.causal-table tbody tr:first-child td {
+    font-weight: normal;
+    background-color: transparent;
+}
+
+.causal-table th:nth-child(1), .causal-table td:nth-child(1) {
+    width: 23%;
+}
+.causal-table th:nth-child(2), .causal-table td:nth-child(2) {
+    width: 54%;
+}
+.causal-table th:nth-child(3), .causal-table td:nth-child(3) {
+    width: 23%;
+}
+
+/* Top row (header) highlight */
+.causal-table thead tr th {
+  background-color: rgba(80, 80, 80, 0.07); /* light mode */
+  font-weight: 700;
+}
+[data-md-color-scheme="slate"] .causal-table thead tr th {
+  background-color: rgba(255, 255, 255, 0.07); /* dark mode */
+  color: #e6e9ef;
+}
+
+/* Zebra striping: every second row in the body */
+.causal-table tbody tr:nth-child(2n) td {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+[data-md-color-scheme="slate"] .causal-table tbody tr:nth-child(2n) td {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.notebooks-table {
+    width: 80%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 0.8em;
+}
+.notebooks-table th, .causal-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.notebooks-table th {
+    background-color: #f2f2f2;
+}
+
+.notebooks-table th, .notebooks-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.notebooks-table th {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.notebooks-table tbody tr:first-child td {
+    font-weight: normal;
+    background-color: transparent;
+}
+
+.notebooks-table th:nth-child(1), .notebooks-table td:nth-child(1) {
+    width: 25%;
+}
+.notebooks-table th:nth-child(2), .notebooks-table td:nth-child(2) {
+    width: 15%;
+}
+.notebooks-table th:nth-child(3), .notebooks-table td:nth-child(3) {
+    width: 60%;
+}
+
+/* Top row (header) highlight */
+.notebooks-table thead tr th {
+  background-color: rgba(80, 80, 80, 0.07); /* light mode */
+  font-weight: 700;
+}
+[data-md-color-scheme="slate"] .notebooks-table thead tr th {
+  background-color: rgba(255, 255, 255, 0.07); /* dark mode */
+  color: #e6e9ef;
+}
+
+/* Zebra striping: every second row in the body */
+.notebooks-table tbody tr:nth-child(2n) td {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+[data-md-color-scheme="slate"] .notebooks-table tbody tr:nth-child(2n) td {
+  background-color: rgba(255, 255, 255, 0.04);
+}
