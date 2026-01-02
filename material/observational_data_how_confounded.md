@@ -13,10 +13,22 @@ As a result, many datasets are observational...
 Are all observational datasets created the same, though? or are some more confounded than others?
 
 !!! example "Example"
-    tbw...
+    Consider the same sleeping pill medical study setting we had in the [randomized data page](randomized_data_why_and_how.md).
+
+    However, this time around the data you have looks like this: $694$ in the control group and $306$ in the treatment group... Not only are they imbalanced in count, but their `baseline_sleep` and `age` distributions don't look very similar either.
 
     <div style="text-align:center;">
-      <img src="../imgs/rct_data_1.png" alt="dag1" width="100%" />
+      <img src="../imgs/non_rct_data_1.png" alt="dag1" width="100%" />
     </div>
 
+    Looking at the outcome variable `post-treatment sleep hours`, the orange and blue plots overlap a lot and it isn't clear what the effect of taking the sleeping pill was.
+
+    <div style="text-align:center;">
+      <img src="../imgs/non_rct_data_2.png" alt="dag1" width="50%" />
+    </div>
+
+    If you naively compute the difference in means, and maybe throw in some bootstrapping at it too, you'd get an "ATE" of $\tau = 0.34$ hours with a 95%-CI of $[0.187, 0.483]$.
+
+    That's terrible as the true ATE used to generate the data was $0.85$! 😦
+    
 
