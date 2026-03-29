@@ -8,11 +8,12 @@ Purpose & scope
 Canonical setup (run locally before opening a PR)
 
 ```bash
+# Using standard venv
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install .
-# uv environment manager (recommended)
-uv init
+
+# Using uv (recommended)
 uv sync --all-extras
 uv run mkdocs serve
 ```
@@ -21,14 +22,14 @@ Quick smoke checks (run these before creating a PR)
 
 ```bash
 # Lint (and optionally autofix)
-ruff .
-# ruff --fix
+uv run ruff check .
+# uv run ruff check --fix .
 
 # Run tests (if present)
-pytest -q
+uv run pytest -q
 
 # Minimal smoke import to validate notebooks helpers
-python - <<'PY'
+uv run python - <<'PY'
 from material.notebooks.uplift_modelling_utils import data_generating_process
 _ = data_generating_process(10, setting='default', seed=0)
 print('smoke OK')
